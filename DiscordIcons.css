@@ -2,9 +2,473 @@
  * @name DiscordIcons
  * @author gold_me
  * @description A lightweight theme that adds more icons to your settings.
- * @version 0.0.1
+ * @version 0.1.1
  */
 
- :root {
+/* DEFINITIONS */
+@property --icons-show {
+    syntax: "show | hide";
+    inherits: false;
+    initial-value: show;
+  }
+  @property --icon-size {
+    syntax: "<length>";
+    inherits: true;
+    initial-value: 24px;
+  }
+  @property --icon-gap {
+    syntax: "<length>";
+    inherits: true;
+    initial-value: 10px;
+  }
+  @property --icon-animations {
+    syntax: "true | false";
+    inherits: true;
+    initial-value: true;
+  }
+  @property --icon-expand {
+    syntax: "true | false";
+    inherits: true;
+    initial-value: false;
+  }
+  @property --icon-Default {
+    syntax: "<url>";
+    inherits: true;
+    initial-value: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons2/SVG/Indeterminate_Question_Box.svg");
+  }
+  @property --icon-MyAccount {
+    syntax: "<url>";
+    inherits: true;
+    initial-value: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons2/SVG/Manage_Accounts.svg");
+  }
+  @property --icon-ProfileCustomization {
+    syntax: "<url>";
+    inherits: true;
+    initial-value: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons2/SVG/Style.svg");
+  }
+  @property --icon-PrivacySaftey {
+    syntax: "<url>";
+    inherits: true;
+    initial-value: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons2/SVG/Security.svg");
+  }
+  @property --icon-FamilyCenter {
+    syntax: "<url>";
+    inherits: true;
+    initial-value: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons2/SVG/Supervisor_Account.svg");
+  }
+  @property --icon-AuthorizedApps {
+    syntax: "<url>";
+    inherits: true;
+    initial-value: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons2/SVG/App_Registration.svg");
+  }
+  @property --icon-Devices {
+    syntax: "<url>";
+    inherits: true;
+    initial-value: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons2/SVG/Devices.svg");
+  }
+  @property --icon-Connections {
+    syntax: "<url>";
+    inherits: true;
+    initial-value: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons2/SVG/Link.svg");
+  }
+  @property --icon-Clips {
+    syntax: "<url>";
+    inherits: true;
+    initial-value: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons2/SVG/Theaters.svg");
+  }
+  @property --icon-FriendRequests {
+    syntax: "<url>";
+    inherits: true;
+    initial-value: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons2/SVG/Group_Add.svg");
+  }
+  @property --icon-Nitro {
+    syntax: "<url>";
+    inherits: true;
+    initial-value: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons2/SVG/Discord/Nitro.svg");
+  }
+  @property --icon-ServerBoost {
+    syntax: "<url>";
+    inherits: true;
+    initial-value: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons2/SVG/Discord/Server_Boost.svg");
+  }
+  @property --icon-Subscriptions {
+    syntax: "<url>";
+    inherits: true;
+    initial-value: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons2/SVG/Star.svg");
+  }
+  @property --icon-Gifts {
+    syntax: "<url>";
+    inherits: true;
+    initial-value: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons2/SVG/Redeem.svg");
+  }
+  @property --icon-Billing {
+    syntax: "<url>";
+    inherits: true;
+    initial-value: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons2/SVG/Receipt_Long.svg");
+  }
+  @property --icon-Appearance {
+    syntax: "<url>";
+    inherits: true;
+    initial-value: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons2/SVG/Brush.svg");
+  }
+  @property --icon-Accessibility {
+    syntax: "<url>";
+    inherits: true;
+    initial-value: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons2/SVG/Accessibility_New.svg");
+  }
+  @property --icon-VoiceVideo {
+    syntax: "<url>";
+    inherits: true;
+    initial-value: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons2/SVG/Perm_Camera_Mic.svg");
+  }
+  @property --icon-Chat {
+    syntax: "<url>";
+    inherits: true;
+    initial-value: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons2/SVG/Chat.svg");
+  }
+  @property --icon-Notifications {
+    syntax: "<url>";
+    inherits: true;
+    initial-value: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons2/SVG/Notifications_Active.svg");
+  }
+  @property --icon-Keybinds {
+    syntax: "<url>";
+    inherits: true;
+    initial-value: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons2/SVG/Keyboard.svg");
+  }
+  @property --icon-Language {
+    syntax: "<url>";
+    inherits: true;
+    initial-value: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons2/SVG/Translate.svg");
+  }
+  @property --icon-Windows {
+    syntax: "<url>";
+    inherits: true;
+    initial-value: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons2/SVG/Logo-Windows.svg");
+  }
+  @property --icon-Mac {
+    syntax: "<url>";
+    inherits: true;
+    initial-value: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons2/SVG/Logo-Apple.svg");
+  }
+  @property --icon-Linux {
+    syntax: "<url>";
+    inherits: true;
+    initial-value: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons2/SVG/Logo-Tux.svg");
+  }
+  @property --icon-Streaming {
+    syntax: "<url>";
+    inherits: true;
+    initial-value: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons2/SVG/Videocam.svg");
+  }
+  @property --icon-Advanced {
+    syntax: "<url>";
+    inherits: true;
+    initial-value: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons2/SVG/Tune.svg");
+  }
+  @property --icon-Vencord {
+    syntax: "<url>";
+    inherits: true;
+    initial-value: url("https://raw.githubusercontent.com/jdecked/twemoji/main/assets/svg/1f431.svg");
+  }
+  @property --icon-Plugins {
+    syntax: "<url>";
+    inherits: true;
+    initial-value: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons2/SVG/Extention.svg");
+  }
+  @property --icon-Themes {
+    syntax: "<url>";
+    inherits: true;
+    initial-value: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons2/SVG/Format_Paint.svg");
+  }
+  @property --icon-Updater {
+    syntax: "<url>";
+    inherits: true;
+    initial-value: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons2/SVG/System_Update_Alt.svg");
+  }
+  @property --icon-Cloud {
+    syntax: "<url>";
+    inherits: true;
+    initial-value: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons2/SVG/Cloud.svg");
+  }
+  @property --icon-BackupRestore {
+    syntax: "<url>";
+    inherits: true;
+    initial-value: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons2/SVG/Backup.svg");
+  }
 
+
+  
+  @property --icon-Logout {
+    syntax: "<url>";
+    inherits: true;
+    initial-value: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons2/SVG/Logout.svg");
+  }
+
+
+/* Padding and Icons */
+[class^=standardSidebarView_] [class^=sidebarRegionScroller_] [class*="item"]{
+	padding: calc((32px - var(--icon-size)) / 2) calc((32px - var(--icon-size)) / 2);
+}
+[class^=standardSidebarView_] [class^=sidebarRegionScroller_] [class*="item"]::before {
+	content: "";
+	float: left;
+	width: var(--icon-size);
+	height: var(--icon-size);
+	margin-right: 8px;
+	opacity: .5;
+	transition: 160ms;
+	mask: var(--icon-Default) center/contain no-repeat;
+	background: currentColor;
+}
+[class^=standardSidebarView_] [class^=sidebarRegionScroller_] [class*="item"] {
+	line-height: var(--icon-size);
+}
+[class^=sidebarRegionScroller_] [class^=item_] .dot-2s_oHI {
+	background-color: var(--bd-blue);
+}
+[class^=standardSidebarView_] [class^=sidebarRegionScroller_] [class*="item"]:hover::before {
+	opacity: .7;
+}
+[class^=standardSidebarView_] [class^=sidebarRegionScroller_] [class*="item"][class*="selected"]::before {
+	opacity: 1;
+}
+/* Button Hover & Animations */
+@container style(--icon-animations: true) {
+	[class^=standardSidebarView_] [class^=sidebar_] [class^=side_] [class*="item"] {
+		border-radius: 4px 0px 0px 4px;
+		transform: translateZ(0);
+		transition: 220ms;
+	}
+  [class^=standardSidebarView_] [class^=sidebar_] [class^=side_] [class*=item_]:hover,
+	[class^=standardSidebarView_] [class^=sidebar_] [class^=side_] [class*=themed_].selected_a0[class^=item_] {
+		transform: translateX(8px);
+		transition: 160ms;
+	}
+}
+/* Icons Expansion */
+@container style(--icon-expand: true) {
+  [class^=standardSidebarView_] [class^=sidebar_] [class^=side_] [class*=item_]:hover,
+  [class^=standardSidebarView_] [class^=side_] .selected_a0[class*=item_]
+	{
+		min-width: calc(var(--custom-standard-sidebar-view-sidebar-content-width) + (var(--icon-size) * (1 + (1 / 3))));
+		margin-left: calc(-1 * var(--icon-size) * (1 + (1 / 3)));
+	}
+}
+
+/* Nitro, Server Boost & Subscriptions Selected Color Fix */
+[class^=standardSidebarView_] [aria-label="User Settings"][class^=side_] .selected_a0[class*=item_][data-tab-id="Discord Nitro" i] [class^=background_] {
+	background-color: unset !important;
+	z-index: 0;
+}
+/* Remove Unnesecary Icons */
+[class^=standardSidebarView_] [class^=item_][aria-label="Delete Category"] .tabBarItemContainer_e7c031 svg,
+[class^=standardSidebarView_] [class^=item_][aria-label="Delete Server" i] .tabBarItemContainer_e7c031 svg,
+[class^=standardSidebarView_] [class^=item_][aria-label="Delete Channel" i] .tabBarItemContainer_e7c031 svg,
+[class^=standardSidebarView_] [class^=side_] [class^=premiumLabel_] svg,
+[class^=standardSidebarView_] [class^=side_] [class*=serverBoostTabItem_] .icon_f7189e,
+[class^=standardSidebarView_] [class^=side_] [class^=item_][aria-label="Log Out"] .tabBarItemContainer_e7c031 svg
+{
+	display: none;
+}
+
+/*		User Settings		*/
+
+/* My Account */
+[class^=standardSidebarView_] [class^=side_] [class^=item_][data-tab-id="My Account" i]::before
+{
+  mask: var(--icon-MyAccount) center/contain no-repeat;
+}
+/* Profiles */
+[class^=standardSidebarView_] [class^=side_] [class^=item_][data-tab-id="Profile Customization" i]::before
+{
+  mask: var(--icon-ProfileCustomization) center/contain no-repeat;
+}
+/* Privacy & Saftey */
+[class^=standardSidebarView_] [class^=side_] [class^=item_][data-tab-id="Privacy & Safety" i]::before
+{
+  mask: var(--icon-PrivacySaftey) center/contain no-repeat;
+}
+/* Family Center */
+[class^=standardSidebarView_] [class^=side_] [class^=item_][data-tab-id="Family Center" i]::before
+{
+  mask: var(--icon-FamilyCenter) center/contain no-repeat;
+}
+/* Authorized Apps */
+[class^=standardSidebarView_] [class^=side_] [class^=item_][data-tab-id="Authorized Apps" i]::before
+{
+    mask: var(--icon-AuthorizedApps) center/contain no-repeat;
+}
+/* Devices */
+[class^=standardSidebarView_] [class^=side_] [class^=item_][data-tab-id="Sessions" i]::before
+{
+  mask: var(--icon-Devices) center/contain no-repeat;
+}
+/* Connections */
+[class^=standardSidebarView_] [class^=side_] [class^=item_][data-tab-id="Connections" i]::before
+{
+  mask: var(--icon-Connections) center/contain no-repeat;
+}
+/* Clips */
+[class^=standardSidebarView_] [class^=side_] [class^=item_][data-tab-id="Settings Clips" i]::before
+{
+  mask: var(--icon-Clips) center/contain no-repeat;
+}
+/* Friend Requests */
+[class^=standardSidebarView_] [class^=side_] [class^=item_][data-tab-id="Friend Requests" i]::before
+{
+  mask: var(--icon-FriendRequests) center/contain no-repeat;
+}
+
+/*		Billing Settings		*/
+
+/* Discord Nitro */
+[class^=standardSidebarView_] [aria-label="User Settings"][class^=side_] [class*=item_][data-tab-id="Discord Nitro" i]::before
+{
+  mask: var(--icon-Nitro) center/contain no-repeat;
+}
+[class^=standardSidebarView_] [aria-label="User Settings"][class^=side_] [class*=item_][data-tab-id="Discord Nitro" i]:hover::before,
+[class^=standardSidebarView_] [aria-label="User Settings"][class^=side_] .selected_a0[class*=item_][data-tab-id="Discord Nitro" i]::before
+{
+	background-color: var(--brand-500) !important;
+}
+/* Server Boost */
+[class^=standardSidebarView_] [aria-label="User Settings"][class^=side_] [class*=item_][data-tab-id="Nitro Server Boost" i]::before
+{
+  mask: var(--icon-ServerBoost) center/contain no-repeat;
+}
+[class^=standardSidebarView_] [aria-label="User Settings"][class^=side_] [class*=item_][data-tab-id="Nitro Server Boost" i]:hover::before,
+[class^=standardSidebarView_] [aria-label="User Settings"][class^=side_] .selected_a0[class*=item_][data-tab-id="Nitro Server Boost" i]::before
+{
+	background-color: var(--guild-boosting-pink);
+}
+/* Subscriptions */
+[class^=standardSidebarView_] [class^=side_] [class^=item_][data-tab-id="Subscriptions" i]::before
+{
+  mask: var(--icon-Subscriptions) center/contain no-repeat;
+}
+/* Gift Inventory */
+[class^=standardSidebarView_] [class^=side_] [class^=item_][data-tab-id="Library Inventory" i]::before
+{
+  mask: var(--icon-Gifts) center/contain no-repeat;
+}
+/* Billing */
+[class^=standardSidebarView_] [class^=side_] [class^=item_][data-tab-id="Billing" i]::before
+{
+  mask: var(--icon-Billing) center/contain no-repeat;
+}
+
+/*		App Settings		*/
+
+/* Appearance */
+[class^=standardSidebarView_] [class^=side_] [class^=item_][data-tab-id="Appearance" i]::before
+{
+  mask: var(--icon-Appearance) center/contain no-repeat;
+}
+/* Appearance */
+[class^=standardSidebarView_] [class^=side_] [class^=item_][data-tab-id="Accessibility" i]::before
+{
+  mask: var(--icon-Accessibility) center/contain no-repeat;
+}
+/* Voice & Video */
+[class^=standardSidebarView_] [class^=side_] [class^=item_][data-tab-id="Voice & Video" i]::before
+{
+  mask: var(--icon-VoiceVideo) center/contain no-repeat;
+}
+/* Chat */
+[class^=standardSidebarView_] [class^=side_] [class^=item_][data-tab-id="Text & Images" i]::before
+{
+  mask: var(--icon-Chat) center/contain no-repeat;
+}
+/* Notifications */
+[class^=standardSidebarView_] [class^=side_] [class^=item_][data-tab-id="Notifications" i]::before
+{
+  mask: var(--icon-Notifications) center/contain no-repeat;
+}
+/* Keybinds */
+[class^=standardSidebarView_] [class^=side_] [class^=item_][data-tab-id="Keybinds" i]::before
+{
+  mask: var(--icon-Keybinds) center/contain no-repeat;
+}
+/* Language */
+[class^=standardSidebarView_] [class^=side_] [class^=item_][data-tab-id="Language" i]::before
+{
+  mask: var(--icon-Language) center/contain no-repeat;
+}
+/* Windows Settings */
+[class^=standardSidebarView_] [class^=side_] [class^=item_][data-tab-id="Windows" i]::before
+{
+  mask: var(--icon-Windows) center/contain no-repeat;
+}
+/* Linux Settings */
+[class^=standardSidebarView_] [class^=side_] [class^=item_][data-tab-id="Linux" i]::before
+{
+  mask: var(--icon-Linux) center/contain no-repeat;
+}
+/* Streamer Mode */
+[class^=standardSidebarView_] [class^=side_] [class^=item_][data-tab-id="Streamer Mode" i]::before
+{
+  mask: var(--icon-Streaming) center/contain no-repeat;
+}
+/* Streamer Mode */
+[class^=standardSidebarView_] [class^=side_] [class^=item_][data-tab-id="Advanced" i]::before
+{
+  mask: var(--icon-Advanced) center/contain no-repeat;
+}
+
+/* Vencord Icons */
+.vc-settings[class*=item_][class*=themed_]::before {
+  mask: var(--icon-Vencord) center/contain no-repeat;
+}
+.vc-plugins[class*=item_][class*=themed_]::before {
+	mask: var(--icon-Plugins) center/contain no-repeat;
+}
+.vc-themes[class*=item_][class*=themed_]::before {
+	mask: var(--icon-Themes) center/contain no-repeat;
+}
+.vc-updater[class*=item_][class*=themed_]::before {
+	mask: var(--icon-Updater) center/contain no-repeat;
+}
+.vc-cloud[class*=item_][class*=themed_]::before {
+	mask: var(--icon-Cloud) center/contain no-repeat;
+}
+.vc-backup-restore[class*=item_][class*=themed_]::before {
+	mask: var(--icon-BackupRestore) center/contain no-repeat;
+}
+
+/*    Activity Settings    */
+/* Activity Privacy */
+[class^=standardSidebarView_] [class^=side_] [class^=item_][data-tab-id="Activity Privacy" i]::before
+{
+  mask: var(--icon-Default) center/contain no-repeat;
+}
+/* Game Activity */
+[class^=standardSidebarView_] [class^=side_] [class^=item_][data-tab-id="Game Activity" i]::before
+{
+  mask: var(--icon-Default) center/contain no-repeat;
+}
+/* Overlay */
+[class^=standardSidebarView_] [class^=side_] [class^=item_][data-tab-id="Overlay" i]::before
+{
+  mask: var(--icon-Default) center/contain no-repeat;
+}
+
+/* Logout */
+[class^=standardSidebarView_] [class^=side_] [class^=item_][aria-label="Log Out"]::before
+{
+	mask: var(--icon-Logout) center/contain no-repeat;
+	opacity: .6;
+	background-color: var(--info-danger-foreground);
+}
+[class^=standardSidebarView_] [class^=side_] [class^=item_][aria-label="Log Out"]:hover:before
+{
+	opacity: 1;
+}
+[class^=standardSidebarView_] [class^=side_] [class^=item_][aria-label="Log Out"],
+[class^=standardSidebarView_] [class^=side_] [class^=item_][aria-controls="logout-tab" i] {
+	color: var(--info-danger-foreground);
+}
+[class^=standardSidebarView_] [class^=side_] [class^=item_][aria-label="Log Out"]:hover,
+[class^=standardSidebarView_] [class^=side_] [class^=item_][aria-controls="logout-tab" i]:hover {
+	background-color: var(--info-danger-background);
 }

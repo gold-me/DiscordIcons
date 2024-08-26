@@ -2,15 +2,14 @@
  * @name DiscordIcons
  * @author gold_me
  * @description A lightweight theme that adds more icons to your settings.
- * @version 0.1.1
+ * @version 0.1.2
  */
 
  :root {
     /*
-    Varibles are listed here, just change them to ones you like!
+    Variables are listed here, just change them to ones you like!
 
-    --icons-show: show/hide (Default: Show) Actually displays the icons.
-    --icons-show: #px (Default: 24px) Set the size of the icons.
+    --icons-size: #px (Default: 24px) Set the size of the icons.
     --icons-animations: true/false (Default: true) Makes the sidebars have hover animations.
     --icons-expand: true/false (Default: false) Expands the sidebar when hovering over items, mainly for being able to see any words that got cut off from icons. May break some themes.
 

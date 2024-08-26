@@ -34,137 +34,137 @@
 @property --icon-Default {
     syntax: "<url>";
     inherits: true;
-    initial-value: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons2/SVG/Indeterminate_Question_Box.svg");
+    initial-value: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Indeterminate_Question_Box.svg");
   }
 @property --icon-MyAccount {
     syntax: "<url>";
     inherits: true;
-    initial-value: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons2/SVG/Manage_Accounts.svg");
+    initial-value: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Manage_Accounts.svg");
   }
 @property --icon-ProfileCustomization {
     syntax: "<url>";
     inherits: true;
-    initial-value: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons2/SVG/Style.svg");
+    initial-value: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Style.svg");
   }
 @property --icon-PrivacySaftey {
     syntax: "<url>";
     inherits: true;
-    initial-value: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons2/SVG/Security.svg");
+    initial-value: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Security.svg");
   }
 @property --icon-FamilyCenter {
     syntax: "<url>";
     inherits: true;
-    initial-value: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons2/SVG/Supervisor_Account.svg");
+    initial-value: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Supervisor_Account.svg");
   }
 @property --icon-AuthorizedApps {
     syntax: "<url>";
     inherits: true;
-    initial-value: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons2/SVG/App_Registration.svg");
+    initial-value: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/App_Registration.svg");
   }
 @property --icon-Devices {
     syntax: "<url>";
     inherits: true;
-    initial-value: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons2/SVG/Devices.svg");
+    initial-value: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Devices.svg");
   }
 @property --icon-Connections {
     syntax: "<url>";
     inherits: true;
-    initial-value: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons2/SVG/Link.svg");
+    initial-value: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Link.svg");
   }
 @property --icon-Clips {
     syntax: "<url>";
     inherits: true;
-    initial-value: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons2/SVG/Theaters.svg");
+    initial-value: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Theaters.svg");
   }
 @property --icon-FriendRequests {
     syntax: "<url>";
     inherits: true;
-    initial-value: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons2/SVG/Group_Add.svg");
+    initial-value: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Group_Add.svg");
   }
 @property --icon-Nitro {
     syntax: "<url>";
     inherits: true;
-    initial-value: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons2/SVG/Discord/Nitro.svg");
+    initial-value: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Discord/Nitro.svg");
   }
 @property --icon-ServerBoost {
     syntax: "<url>";
     inherits: true;
-    initial-value: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons2/SVG/Discord/Server_Boost.svg");
+    initial-value: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Discord/Server_Boost.svg");
   }
 @property --icon-Subscriptions {
     syntax: "<url>";
     inherits: true;
-    initial-value: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons2/SVG/Star.svg");
+    initial-value: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Star.svg");
   }
 @property --icon-Gifts {
     syntax: "<url>";
     inherits: true;
-    initial-value: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons2/SVG/Redeem.svg");
+    initial-value: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Redeem.svg");
   }
 @property --icon-Billing {
     syntax: "<url>";
     inherits: true;
-    initial-value: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons2/SVG/Receipt_Long.svg");
+    initial-value: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Receipt_Long.svg");
   }
 @property --icon-Appearance {
     syntax: "<url>";
     inherits: true;
-    initial-value: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons2/SVG/Brush.svg");
+    initial-value: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Brush.svg");
   }
 @property --icon-Accessibility {
     syntax: "<url>";
     inherits: true;
-    initial-value: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons2/SVG/Accessibility_New.svg");
+    initial-value: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Accessibility_New.svg");
   }
 @property --icon-VoiceVideo {
     syntax: "<url>";
     inherits: true;
-    initial-value: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons2/SVG/Perm_Camera_Mic.svg");
+    initial-value: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Perm_Camera_Mic.svg");
   }
 @property --icon-Chat {
     syntax: "<url>";
     inherits: true;
-    initial-value: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons2/SVG/Chat.svg");
+    initial-value: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Chat.svg");
   }
 @property --icon-Notifications {
     syntax: "<url>";
     inherits: true;
-    initial-value: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons2/SVG/Notifications_Active.svg");
+    initial-value: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Notifications_Active.svg");
   }
 @property --icon-Keybinds {
     syntax: "<url>";
     inherits: true;
-    initial-value: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons2/SVG/Keyboard.svg");
+    initial-value: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Keyboard.svg");
   }
 @property --icon-Language {
     syntax: "<url>";
     inherits: true;
-    initial-value: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons2/SVG/Translate.svg");
+    initial-value: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Translate.svg");
   }
 @property --icon-Windows {
     syntax: "<url>";
     inherits: true;
-    initial-value: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons2/SVG/Logo-Windows.svg");
+    initial-value: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Logo-Windows.svg");
   }
 @property --icon-Mac {
     syntax: "<url>";
     inherits: true;
-    initial-value: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons2/SVG/Logo-Apple.svg");
+    initial-value: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Logo-Apple.svg");
   }
 @property --icon-Linux {
     syntax: "<url>";
     inherits: true;
-    initial-value: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons2/SVG/Logo-Tux.svg");
+    initial-value: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Logo-Tux.svg");
   }
 @property --icon-Streaming {
     syntax: "<url>";
     inherits: true;
-    initial-value: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons2/SVG/Videocam.svg");
+    initial-value: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Videocam.svg");
   }
 @property --icon-Advanced {
     syntax: "<url>";
     inherits: true;
-    initial-value: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons2/SVG/Tune.svg");
+    initial-value: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Tune.svg");
   }
 @property --icon-Vencord {
     syntax: "<url>";
@@ -174,112 +174,112 @@
 @property --icon-Plugins {
     syntax: "<url>";
     inherits: true;
-    initial-value: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons2/SVG/Extention.svg");
+    initial-value: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Extention.svg");
   }
 @property --icon-Themes {
     syntax: "<url>";
     inherits: true;
-    initial-value: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons2/SVG/Format_Paint.svg");
+    initial-value: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Format_Paint.svg");
   }
 @property --icon-Updater {
     syntax: "<url>";
     inherits: true;
-    initial-value: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons2/SVG/System_Update_Alt.svg");
+    initial-value: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/System_Update_Alt.svg");
   }
 @property --icon-Cloud {
     syntax: "<url>";
     inherits: true;
-    initial-value: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons2/SVG/Cloud.svg");
+    initial-value: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Cloud.svg");
   }
 @property --icon-BackupRestore {
     syntax: "<url>";
     inherits: true;
-    initial-value: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons2/SVG/Backup.svg");
+    initial-value: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Backup.svg");
   }
 @property --icon-ActivityPrivacy {
     syntax: "<url>";
     inherits: true;
-    initial-value: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons2/SVG/Indeterminate_Question_Box.svg");
+    initial-value: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Indeterminate_Question_Box.svg");
   }
 @property --icon-GameActivity {
     syntax: "<url>";
     inherits: true;
-    initial-value: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons2/SVG/Indeterminate_Question_Box.svg");
+    initial-value: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Indeterminate_Question_Box.svg");
   }
 @property --icon-Overlay {
     syntax: "<url>";
     inherits: true;
-    initial-value: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons2/SVG/Indeterminate_Question_Box.svg");
+    initial-value: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Indeterminate_Question_Box.svg");
   }
 @property --icon-Changelog {
     syntax: "<url>";
     inherits: true;
-    initial-value: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons2/SVG/Indeterminate_Question_Box.svg");
+    initial-value: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Indeterminate_Question_Box.svg");
   }
 @property --icon-Merch {
     syntax: "<url>";
     inherits: true;
-    initial-value: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons2/SVG/Indeterminate_Question_Box.svg");
+    initial-value: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Indeterminate_Question_Box.svg");
   }
 @property --icon-HypeSquad {
     syntax: "<url>";
     inherits: true;
-    initial-value: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons2/SVG/Indeterminate_Question_Box.svg");
+    initial-value: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Indeterminate_Question_Box.svg");
   }
 @property --icon-Experiments {
     syntax: "<url>";
     inherits: true;
-    initial-value: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons2/SVG/Indeterminate_Question_Box.svg");
+    initial-value: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Indeterminate_Question_Box.svg");
   }
 @property --icon-DeveloperOptions {
     syntax: "<url>";
     inherits: true;
-    initial-value: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons2/SVG/Indeterminate_Question_Box.svg");
+    initial-value: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Indeterminate_Question_Box.svg");
   }
 @property --icon-HotspotOptions {
     syntax: "<url>";
     inherits: true;
-    initial-value: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons2/SVG/Indeterminate_Question_Box.svg");
+    initial-value: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Indeterminate_Question_Box.svg");
   }
 @property --icon-DismissibleConents {
     syntax: "<url>";
     inherits: true;
-    initial-value: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons2/SVG/Indeterminate_Question_Box.svg");
+    initial-value: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Indeterminate_Question_Box.svg");
   }
 @property --icon-PaymentFlowModals {
     syntax: "<url>";
     inherits: true;
-    initial-value: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons2/SVG/Indeterminate_Question_Box.svg");
+    initial-value: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Indeterminate_Question_Box.svg");
   }
 @property --icon-DesignSystems {
     syntax: "<url>";
     inherits: true;
-    initial-value: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons2/SVG/Indeterminate_Question_Box.svg");
+    initial-value: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Indeterminate_Question_Box.svg");
   }
 @property --icon-TextPlayground {
     syntax: "<url>";
     inherits: true;
-    initial-value: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons2/SVG/Indeterminate_Question_Box.svg");
+    initial-value: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Indeterminate_Question_Box.svg");
   }
 @property --icon-TextComponents {
     syntax: "<url>";
     inherits: true;
-    initial-value: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons2/SVG/Indeterminate_Question_Box.svg");
+    initial-value: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Indeterminate_Question_Box.svg");
   }
 @property --icon-IntlTesting {
     syntax: "<url>";
     inherits: true;
-    initial-value: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons2/SVG/Indeterminate_Question_Box.svg");
+    initial-value: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Indeterminate_Question_Box.svg");
   }
 @property --icon-ProfileEffectsPreview {
     syntax: "<url>";
     inherits: true;
-    initial-value: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons2/SVG/Indeterminate_Question_Box.svg");
+    initial-value: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Indeterminate_Question_Box.svg");
   }  
 @property --icon-Logout {
     syntax: "<url>";
     inherits: true;
-    initial-value: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons2/SVG/Logout.svg");
+    initial-value: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Logout.svg");
   }
 
 

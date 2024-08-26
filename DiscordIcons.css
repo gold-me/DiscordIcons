@@ -601,18 +601,24 @@
 [class^=standardSidebarView_] [class^=side_] [class^=item_][aria-label="Log Out"]::before
 {
 	mask: var(--icon-Logout) center/contain no-repeat;
-	opacity: .6;
-	background-color: var(--info-danger-foreground);
 }
-[class^=standardSidebarView_] [class^=side_] [class^=item_][aria-label="Log Out"]:hover:before
-{
-	opacity: 1;
-}
-[class^=standardSidebarView_] [class^=side_] [class^=item_][aria-label="Log Out"],
-[class^=standardSidebarView_] [class^=side_] [class^=item_][aria-controls="logout-tab" i] {
+
+
+/* Make Delete/Logout Buttons Red */
+[class^=item_][data-tab-id="DELETE"],
+[class^=item_][data-tab-id="logout"] {
 	color: var(--info-danger-foreground);
 }
-[class^=standardSidebarView_] [class^=side_] [class^=item_][aria-label="Log Out"]:hover,
-[class^=standardSidebarView_] [class^=side_] [class^=item_][aria-controls="logout-tab" i]:hover {
+[class^=item_][data-tab-id="DELETE"]:hover,
+[class^=item_][data-tab-id="logout"]:hover {
 	background-color: var(--info-danger-background);
+}
+[class^=item_][data-tab-id="DELETE"]::before,
+[class^=item_][data-tab-id="logout"]::before {
+  opacity: .6;
+	background-color: var(--info-danger-foreground);
+}
+[class^=item_][data-tab-id="DELETE"]:hover::before,
+[class^=item_][data-tab-id="logout"]:hover::before {
+	opacity: 1;
 }

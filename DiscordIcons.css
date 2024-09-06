@@ -3,7 +3,7 @@
  * @author gold_me
  * @description A lightweight theme that adds more icons to your settings.
  * @source https://github.com/gold-me/DiscordIcons
- * @version 0.1.5
+ * @version 0.1.6
  */
 
 /* DEFINITIONS */
@@ -606,7 +606,7 @@ mask: var(--icon-ProfileEffectsPreview) center/contain no-repeat;
 mask: var(--icon-Logout) center/contain no-repeat;
 }
 /* Delete ____ */
-[class^=standardSidebarView_] [class^=item_][data-tab-id="logout"]::before
+[class^=standardSidebarView_] [class^=item_][data-tab-id="DELETE"]::before
 {
 mask: var(--icon-Delete) center/contain no-repeat;
 }

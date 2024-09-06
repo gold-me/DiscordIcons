@@ -3,7 +3,7 @@
  * @author gold_me
  * @description A lightweight theme that adds more icons to your settings.
  * @source https://github.com/gold-me/DiscordIcons
- * @version 0.1.4
+ * @version 0.1.5
  */
 
 /* DEFINITIONS */
@@ -281,6 +281,11 @@
   syntax: "<url>";
   inherits: true;
   initial-value: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Logout.svg");
+}
+@property --icon-Delete {
+  syntax: "<url>";
+  inherits: true;
+  initial-value: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Delete.svg");
 }
 
 
@@ -600,6 +605,12 @@ mask: var(--icon-ProfileEffectsPreview) center/contain no-repeat;
 {
 mask: var(--icon-Logout) center/contain no-repeat;
 }
+/* Delete ____ */
+[class^=standardSidebarView_] [class^=item_][data-tab-id="logout"]::before
+{
+mask: var(--icon-Delete) center/contain no-repeat;
+}
+
 
 /* Make Delete/Logout Buttons Red */
 [class^=item_][data-tab-id="DELETE"],

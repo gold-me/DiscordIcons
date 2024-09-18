@@ -3,7 +3,7 @@
  * @author gold_me
  * @description A lightweight theme that adds icons to your settings.
  * @source https://github.com/gold-me/DiscordIcons
- * @version 0.2.3
+ * @version 0.2.4
  */
 
 /* DEFINITIONS */
@@ -395,7 +395,7 @@
 @property --icon-Invite {
 	syntax: "<url>";
 	inherits: true;
-	initial-value: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Mail.svg");
+	initial-value: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Send.svg");
 }
 @property --icon-Permissions {
 	syntax: "<url>";

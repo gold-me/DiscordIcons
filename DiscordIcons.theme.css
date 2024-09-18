@@ -2,7 +2,7 @@
  * @name DiscordIcons
  * @author gold_me
  * @description A lightweight theme that adds more icons to your settings.
- * @version 0.1.7
+ * @version 0.2.3
  */
 
 @import url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/DiscordIcons.css");
@@ -11,9 +11,18 @@
     /*
     Variables are listed here, just change them to ones you like!
 
-    --icons-size: #px (Default: 24px) Set the size of the icons.
-    --icons-animations: true/false (Default: true) Makes the sidebars have hover animations.
-    --icons-expand: true/false (Default: false) Expands the sidebar when hovering over items, mainly for being able to see any words that got cut off from icons. May break some themes.
+    --icon-size: [#px] (Default: 24px) Set the size of the icons.
+    --icon-animations: [true/false] (Default: true) Makes the sidebars have hover animations.
+    --icon-expand: [true/false] (Default: false) Expands the sidebar when hovering over items, mainly for being able to see any words that got cut off from icons. May break some themes.
+    --icon-monocolor: [true/false] (Default: false) Some icons have have been setup to change color on their selection/hover, set this to true to disable that functionality.
+    --icon-permacolor: [true/false] (Default: false) Makes icons always display their custom color
+
+    Custom Colors: Want to make an icon have a custom color? All you have to do is set the --icon-color varible for the icon.
+
+    Example:
+    .item_a0[data-tab-id="Discord Nitro"]::before {
+		--icon-color: var(--brand-500);
+	}
 
     */
 }

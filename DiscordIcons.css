@@ -13,6 +13,12 @@
 	initial-value: 24px;
 }
 
+@property --icon-height {
+	syntax: "<length>";
+	inherits: true;
+	initial-value: 32px;
+}
+
 @property --icon-gap {
 	syntax: "<length>";
 	inherits: true;
@@ -487,25 +493,37 @@
 	initial-value: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Delete.svg");
 }
 
+@property --icon-Party {
+	syntax: "<url>";
+	inherits: true;
+	initial-value: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Discord/Party.svg");
+}
+
 :root {
 	container: root;
 }
 
+
 /* Padding and Icons */
 .sidebar_c25c6d .side_a0 .item_a0 {
-	padding: calc((32px - var(--icon-size)) / 2) 4px !important
+	padding: calc((var(--icon-height) - var(--icon-size)) / 2) 4px !important
 }
 
 .sidebar_c25c6d .item_a0::before {
 	content: "";
 	float: left;
-	width: var(--icon-size);
-	height: var(--icon-size);
+	width: var(--icon-size) !important;
+	height: var(--icon-size) !important;
 	margin-right: 8px;
 	opacity: 0.5;
 	transition: 160ms;
 	mask: var(--icon-Default) center/contain no-repeat;
 	background: currentColor;
+
+	/* Conflicting Theme Sidebar fixes */
+	margin-top: 0px !important;
+	position: static !important;
+	background-image: unset !important;
 }
 
 .sidebar_c25c6d .side_a0 .item_a0 {
@@ -525,6 +543,7 @@
 }
 
 /* Icon Coloring */
+
 @container root style(--icon-monocolor: false) {
 
 	.sidebar_c25c6d .side_a0 .item_a0.selected_a0::before,
@@ -583,6 +602,7 @@
 }
 
 /* Remove Unnesecary Icons */
+.item_a0[data-tab-id="Powermode Settings"] img,
 [class^="premiumLabel_"] svg,
 [class^="serverBoostTabItem_"] .icon_f7189e,
 .item_a0:is([data-tab-id="DELETE"], [data-tab-id="logout"]) [class^="tabBarItemContainer_"] svg {
@@ -679,6 +699,11 @@
 /* Settings: Voice & Video */
 .item_a0[data-tab-id="Voice & Video"]::before {
 	mask: var(--icon-VoiceVideo, var(--icon-Default)) center/contain no-repeat;
+}
+
+/* Settings: Party Mode */
+.item_a0[data-tab-id="Powermode Settings"]::before {
+	mask: var(--icon-Party, var(--icon-Default)) center/contain no-repeat;
 }
 
 /* Settings: Chat */
@@ -986,9 +1011,9 @@
 
 .item_a0:is([data-tab-id="DELETE"],[data-tab-id="logout"])::before {
 	background-color: var(--info-danger-foreground) !important;
-	opacity: 0.6;
+	opacity: 0.6 !important;
 }
 
 .item_a0:is([data-tab-id="DELETE"],[data-tab-id="logout"]):hover::before {
-	opacity: 1;
+	opacity: 1 !important;
 }

@@ -14,6 +14,8 @@ jobs:
           node-version: 12
       - name: Install
         run: npm install
+      - name: Fund
+        run: npm fund
       - name: Build
         run: npm run build
       - name: Deploy

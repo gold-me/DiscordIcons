@@ -19,7 +19,8 @@
   },
   "author": "gold_me",
   "license": "ISC",
-  "dependencies": {
+  "homepage": "https://gold-me.github.io/DiscordIcons/",
+  "devDependencies": {
     "rimraf": "^6.0.1",
     "sass": "^1.79.3"
   }

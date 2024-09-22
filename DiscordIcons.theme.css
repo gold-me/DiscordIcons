@@ -2,10 +2,10 @@
  * @name DiscordIcons
  * @author gold_me
  * @description A lightweight theme that adds more icons to your settings.
- * @version 0.3.2
+ * @version 0.3.0
  */
 
-@import url("https://gold-me.github.io/DiscordIcons/main.css");
+@import url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/public/main.css");
 
 :root {
   /*

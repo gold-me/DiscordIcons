@@ -13,9 +13,7 @@ jobs:
         with:
           node-version: 20
       - name: Install
-        run: npm install
-      - name: Fund
-        run: npm fund
+        run: npm ci
       - name: Build
         run: npm run build
       - name: Deploy

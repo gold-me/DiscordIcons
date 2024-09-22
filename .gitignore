@@ -3,7 +3,7 @@ node_modules/
 .vscode/
 
 # ClearVision build & test files
-public/
+#public/
 test/
 
 # Script files

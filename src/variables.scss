@@ -1,0 +1,179 @@
+// ICON MAP
+$miscSettingsIcons: (
+    // DEFAULT
+    'Default': 'https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Indeterminate_Question_Box.svg'
+);
+
+$userSettingsIcons: (
+    // MY ACCOUNT
+    'my-account': 'https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Manage_Accounts.svg',
+    // USER PROFILE
+    'profile-customization': 'https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Style.svg',
+    // PRIVACY & SAFETY
+    'privacy-&-safety': 'https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Security.svg',
+    // FAMILY CENTER
+    'family-center': 'https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Supervisor_Account.svg',
+    // AUTHORISED APPS
+    'authorized-apps': 'https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/App_Registration.svg',
+    // DEVICES
+    'sessions': 'https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Devices.svg',
+    // CONNECTIONS
+    'connections': 'https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Link.svg',
+    // CLIPS
+    'settings-clips': 'https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Theaters.svg',
+    // FRIEND REQUEST
+    'friend-requests': 'https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Group_Add.svg',
+
+    // NITRO
+    'discord-nitro': 'https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Discord/Nitro.svg',
+    // SERVER BOOST
+    'nitro-server-boost': 'https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Discord/Server_Boost.svg',
+    // SUBSCRIPTIONS
+    'subscriptions': 'https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Fact_Check.svg',
+    // GIFT INVENTORY
+    'library-inventory': 'https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Redeem.svg',
+    // BILLING
+    'billing': 'https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Receipt_Long.svg',
+
+    // APPEARANCE
+    'appearance': 'https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Brush.svg',
+    // ACCESSIBILITY
+    'accessibility': 'https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Accessibility_New.svg',
+    // VOICE & VIDEO
+    'voice-&-video': 'https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Perm_Camera_Mic.svg',
+    // PARTY MODE
+    'powermode-settings': 'https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Discord/Party.svg',
+    // TEXT & IMAGES
+    'text-&-images': 'https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Chat.svg',
+    // NOTIFICATIONS
+    'notifications': 'https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Notifications_Active.svg',
+    // KEYBINDS
+    'keybinds': 'https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Keyboard.svg',
+    // LANGUAGE
+    'language': 'https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Translate.svg',
+    // WINDOWS SETTINGS
+    'windows': 'https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Logo-Windows.svg',
+    // LINUX SETTINGS
+    'linux': 'https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Logo-Tux.svg',
+    // STREAMER MODE
+    'streamer-mode': 'https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Videocam.svg',
+    // ADVANCED
+    'advanced': 'https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Tune.svg',
+
+    // VENCORD SETTINGS
+    'VencordSettings': 'https://raw.githubusercontent.com/jdecked/twemoji/main/assets/svg/1f431.svg',
+    // VENCORD PLUGINS
+    'VencordPlugins': 'https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Extention.svg',
+    // VENCORD THEMES
+    'VencordThemes': 'https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Format_Paint.svg',
+    // VENCORD UPDATER
+    'VencordUpdater': 'https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/System_Update_Alt.svg',
+    // VENCORD CLOUD
+    'VencordCloud': 'https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Cloud.svg',
+    // VENCORD SETTINGS SYNC
+    'VencordSettingsSync': 'https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Backup.svg',
+
+    // ACTIVITY PRIVACY
+    'activity-privacy': 'https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Privacy.svg',
+    // REGISTERED GAMES
+    'game-activity': 'https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Gamepad.svg',
+    // OVERLAY
+    'overlay': 'https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Overlay.svg',
+
+    // CHANGE LOG
+    'changelog': 'https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Update.svg',
+    // MERCH
+    'merchandise': 'https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Shirt.svg',
+    // HYPESQUAD
+    'hypesquad-online': 'https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Discord/HypeSquad.svg',
+
+    // EXPERIMENTS
+    'experiments': 'https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Experiment.svg',
+    // DEVELOPER OPTIONS
+    'developer-options': 'https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Memory.svg',
+    // HOTSPOT OPTION
+    'hotspot-options': 'https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Memory.svg',
+    // DISMISSIBLE CONTENT OPTIONS
+    'dismissible-content-options': 'https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Memory.svg',
+    // PAYMENT FLOW MODALS
+    'payment-flow-modals': 'https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Memory.svg',
+    // DESIGN SYSTEM
+    'design-system': 'https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Memory.svg',
+    // TEXT PLAYGROUND
+    'text-playground': 'https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Memory.svg',
+    // TEXT COMPONENT
+    'text-component': 'https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Memory.svg',
+    // INTL TESTING
+    'intl-testing': 'https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Memory.svg',
+    // PROFILE EFFECTS PREVIEW TOOL
+    'profile-effects-preview-tool': 'https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Memory.svg',
+    // WEB SETTING TREE TOOL
+    'web-setting-tree-tool': 'https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Memory.svg',
+    // LOGOUT
+    'logout': 'https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Logout.svg'
+);
+
+$serverSettingsIcons: (
+    // OVERVIEW
+    'overview': 'https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Info.svg',
+    // ROLES
+    'roles': 'https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Badge.svg',
+    // EMOJI
+    'emoji': 'https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Emoji.svg',
+    // STICKERS
+    'stickers': 'https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Stickers.svg',
+    // SOUNDBOARD
+    'soundboard': 'https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Soundboard.svg',
+    // WIDGET
+    'widget': 'https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Widgets.svg',
+    // SERVER TEMPLATE
+    'guild_templates': 'https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Library_Books.svg',
+    // CUSTOM INVITE LINK
+    'vanity_url': 'https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Share.svg',
+
+    // INTEGRATIONS
+    'integrations': 'https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Mediation.svg',
+    // APP DIRECTORY
+    'app_directory': 'https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Apps.svg',
+
+    // MODERATION
+    'moderation': 'https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Safety_Setup.svg',
+    // SAFETY SETUP
+    'safety': 'https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Safety_Setup.svg',
+    // AUTOMOD
+    'guild_automod': 'https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/AutoMod.svg',
+    // AUDIT LOG
+    'audit_log': 'https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Audit_Log.svg',
+    // BANS
+    'bans': 'https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Gavel.svg',
+
+    // ENABLE COMMUNITY/OVERVIEW
+    'community': 'https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Info.svg',
+    // ONBOARDING
+    'onboarding': 'https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Groups.svg',
+    // SERVER INSIGHTS
+    'analytics': 'https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Insights.svg',
+    // PARTNER PROGRAM
+    'partner': 'https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Discord/Partner.svg',
+    // DISCOVERY
+    'discovery': 'https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Explore.svg',
+    // WELCOME SCREEN
+    'community_welcome': 'https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Explore.svg',
+
+    // SERVER BOOST STATUS
+    'guild_premium': 'https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Discord/Server_Boost.svg',
+    // MONETIZATION
+    'role_subscriptions': 'https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Fact_Check.svg',
+
+    // MEMBERS
+    'members': 'https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Group.svg',
+    // INVITES
+    'instant_invites': 'https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Send.svg',
+
+    // DELETE
+    'delete': 'https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Delete.svg'
+);
+
+$channelSettingsIcons: (
+    'permissions': 'https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Permissions.svg',
+);

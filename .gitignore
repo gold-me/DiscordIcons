@@ -1,0 +1,13 @@
+# Dependency directories
+node_modules/
+.vscode/
+
+# ClearVision build & test files
+public/
+test/
+
+# Script files
+*.bak
+scripts/
+lib/selectors/*.diff
+addons/

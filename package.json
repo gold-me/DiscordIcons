@@ -1,0 +1,26 @@
+{
+  "name": "discordicons",
+  "version": "0.3.0",
+  "description": "A lightweight theme that adds icons to your settings.",
+  "scripts": {
+    "build": "npm run clean && npm run build.sass",
+    "build.sass": "sass --style=compressed --no-source-map main.scss:public/main.css",
+    "clean": "rimraf {public,test}",
+    "addons.clean": "rimraf {addons}",
+    "format": "prettier --write .",
+    "test": "npm run clean && npm run test.build",
+    "test.build": "sass --style=expanded --no-source-map main.scss:test/main.css",
+    "addons": "npm run addons.clean && npm run addons.build",
+    "addons.build": "sass --style=expanded --no-source-map scripts/cvstuff/main.scss:addons/main.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gold-me/DiscordIcons.git"
+  },
+  "author": "gold_me",
+  "license": "ISC",
+  "dependencies": {
+    "rimraf": "^6.0.1",
+    "sass": "^1.79.3"
+  }
+}

@@ -1,0 +1,77 @@
+/* PROPERTIES */
+:root {
+    container: root;
+}
+
+@property --icon-size {
+	syntax: "<length>";
+	inherits: true;
+	initial-value: 24px;
+}
+@property --icon-height {
+	syntax: "<length>";
+	inherits: true;
+	initial-value: 32px;
+}
+@property --icon-gap {
+	syntax: "<length>";
+	inherits: true;
+	initial-value: 10px;
+}
+@property --icon-animations {
+	syntax: "true | false";
+	inherits: true;
+	initial-value: true;
+}
+@property --icon-expand {
+	syntax: "true | false";
+	inherits: true;
+	initial-value: false;
+}
+@property --icon-presets {
+	syntax: "true | false";
+	inherits: true;
+	initial-value: true;
+}
+@property --icon-permacolor {
+	syntax: "true | false";
+	inherits: true;
+	initial-value: false;
+}
+@property --icon-color {
+	syntax: "<color>";
+	inherits: true;
+	initial-value: currentColor;
+}
+
+@each $i, $u in $miscSettingsIcons {
+  @property --icon-#{str-replace(#{$i}, '-&-', '')} {
+    syntax: "<url>";
+    inherits: true;
+    initial-value: url(#{$u});
+  }
+}
+
+@each $i, $u in $userSettingsIcons {
+  @property --icon-#{str-replace(#{$i}, '-&', '')} {
+    syntax: "<url>";
+    inherits: true;
+    initial-value: url(#{$u});
+  }
+}
+
+@each $i, $u in $serverSettingsIcons {
+  @property --icon-#{str-replace(#{$i}, '-&', '')} {
+    syntax: "<url>";
+    inherits: true;
+    initial-value: url(#{$u});
+  }
+}
+
+@each $i, $u in $channelSettingsIcons {
+  @property --icon-#{str-replace(#{$i}, '-&', '')} {
+    syntax: "<url>";
+    inherits: true;
+    initial-value: url(#{$u});
+  }
+}

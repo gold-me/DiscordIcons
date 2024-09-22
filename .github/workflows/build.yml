@@ -1,6 +1,8 @@
 name: Build
 on:
-  - push
+  push:
+    branches:
+      - 'master'
 jobs:
   project:
     name: Build

@@ -1,11 +1,15 @@
+@use 'src/variables';
+
 /**
  * @name DiscordIcons
  * @author gold_me
  * @description A lightweight theme that adds more icons to your settings.
  * @source https://github.com/gold-me/DiscordIcons
- * @version v0.3.4
+ * @version v#{variables.$version}
  */
+
 @import url("https://gold-me.github.io/DiscordIcons/main.css");
+
 :root {
   /*
   Variables are listed here, just change them to ones you like!

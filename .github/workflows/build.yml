@@ -1,6 +1,8 @@
 name: Build
 on:
-  - push
+  push:
+    branches:
+      - 'master'
 jobs:
   project:
     name: Build
@@ -11,7 +13,7 @@ jobs:
       - name: Node
         uses: actions/setup-node@v1
         with:
-          node-version: 12
+          node-version: 20
       - name: Install
         run: npm ci
       - name: Build

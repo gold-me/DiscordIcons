@@ -1,0 +1,44 @@
+/* SETTINGS SIDEBAR ICONS */
+
+%settingsSidebar {
+  // GENERAL STYLES
+  %tabBarItem {
+    &:before {
+        content: "";
+        float: left;
+        width: var(--icon-size) !important;
+        height: var(--icon-size) !important;
+        margin-right: 8px;
+        opacity: 0.5;
+        transition: 160ms;
+        mask: var(--icon-Default) center/contain no-repeat;
+        background: currentColor;
+
+        // Conflicting Theme Sidebar fixes
+        margin-top: 0px !important;
+        position: static !important;
+        background-image: unset !important;
+    }
+  }
+
+  // USER SETTINGS
+  @each $i, $u in $userSettingsIcons {
+    %tabBarItem[data-tab-id=#{str-replace("\'"+#{$i}+"\'", '-', ' ')} i]:before {
+      mask: var(--icon-#{str-replace(#{$i}, '-&', '')}) center/contain no-repeat;
+    }
+  }
+
+  // SERVER SETTINGS
+  @each $i, $u in $serverSettingsIcons {
+    %tabBarItem[data-tab-id=#{str-replace("\'"+#{$i}+"\'", '-', ' ')} i]:before {
+      mask: var(--icon-#{str-replace(#{$i}, '-&', '')}) center/contain no-repeat;
+    }
+  }
+
+  // CHANNEL SETTINGS
+  @each $i, $u in $channelSettingsIcons {
+    %tabBarItem[data-tab-id=#{str-replace("\'"+#{$i}+"\'", '-', ' ')} i]:before {
+      mask: var(--icon-#{str-replace(#{$i}, '-&', '')}) center/contain no-repeat;
+    }
+  }
+}

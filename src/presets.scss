@@ -1,0 +1,16 @@
+/* SETTINGS SIDEBAR COLOR PRESETS */
+$presetColors: (
+    'discord-nitro': 'var(--brand-500)',
+    'nitro-server-boost': 'var(--guild-boosting-pink)',
+    'guild_premium': 'var(--guild-boosting-pink)'
+);
+
+%settingsSidebar {
+    @container root style(--icon-presets: true) {
+        @each $i, $color in $presetColors {
+            %tabBarItem[data-tab-id=#{str-replace("\'"+#{$i}+"\'", '-', ' ')} i] {
+            --icon-color: #{$color};
+            }
+        }
+    }
+}

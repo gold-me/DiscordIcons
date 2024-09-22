@@ -2,7 +2,6 @@
   "name": "discordicons",
   "version": "0.3.0",
   "description": "A lightweight theme that adds icons to your settings.",
-  "private": true,
   "scripts": {
     "build": "npm run clean && npm run build.sass",
     "build.sass": "sass --style=compressed --no-source-map main.scss:public/main.css",

@@ -1,11 +1,51 @@
 
-[.theme.css]:  https://github.com/gold-me/DiscordIcons/raw/main/DiscordIcons.css
-[shield-repo-size]: https://img.shields.io/github/repo-size/gold-me/DiscordIcons?label=Repository&style=flat-square%20%22Total%20size%22
-[github]:  https://github.com/gold-me/DiscordIcons/raw/main/DiscordIcons
+[.theme.css]:  https://github.com/gold-me/DiscordIcons/raw/master/DiscordIcons.theme.css
+
+[css-length]:       https://developer.mozilla.org/en-US/docs/Web/CSS/length
+[css-color]:       https://developer.mozilla.org/en-US/docs/Web/CSS/color
+
+[shield-vc-dl]:     https://img.shields.io/github/downloads/gold-me/DiscordIcons/DiscordIcons.theme.css?color=orange&label=Downloads&style=flat-square
+[shield-repo-size]: https://img.shields.io/github/repo-size/gold-me/DiscordIcons?label=Repository&style=flat-square%20%22Total%20size%22 "Total size"
+
+[github]:  https://github.com/gold-me/DiscordIcons/raw/master/DiscordIcons
+[Vencord]:  https://github.com/Vendicated/Vencord
+
+[release-vc-gh]:    https://github.com/gold-me/DiscordIcons/releases/latest/download/DiscordIcons.theme.css "Get latest release"
 # DiscordIcons
+[![Vencord GitHub downloads][shield-vc-dl]][release-vc-gh]
 [![Total repository size][shield-repo-size]][github]
 
-A lightweight theme that adds more icons to your settings
+A lightweight theme that adds more icons to your settings.
+
+## Installation
+<details><summary>Click to expand</summary>
+
+⚠️ This theme is designed for use with [Vencord][Vencord]; other client mods are not supported.
+
+Enable the `ThemeAttributes` plugin in `Settings` > `Vencord` > `Plugins`.
+### Local
+1. Download `DiscordIcons.theme.css`:
+    - [GitHub][release-vc-gh]
+2. Place the file in the themes folder:
+    - `Settings` > `Vencord` > `Themes` > `Local Themes` > `Open Themes Folder`
+3. Click `Load missing Themes` and toggle on the theme card.
+### Online
+1. Paste the link in `Settings` > `Vencord` > `Themes` > `Online Themes`:
+    - `https://gold-me.github.io/DiscordIcons/main.css`
+</details>
+
+## Customisation
+
+| Variable name     | Description               | Value                | Default value |
+| ----------------- | ------------------------- | ------------------------- | ------------- |
+| `--icon-size`     | Icon size                 | \<[length][css-length]\> | `24px`        |
+| `--icon-height`   | Height of sidebar boxes   | \<[length][css-length]\> | `32px`        |
+| `--icon-animations`   | Toggles sidebar animations | \<true \| false\> | `true`        |
+| `--icon-expand`   | Toggles expand animations | \<true \| false\> | `false`        |
+| `--icon-color`   | Color of icons when hovered/selected | \<[color][css-color]\> | `currentColor`        |
+| `--icon-presets`   | Enables pre-definied custom colors | \<true \| false\> | `true`        |
+| `--icon-permacolor`   | Icons always show their set color | \<true \| false\> | `false`        |
+
 
 ## Credits
 [GoogleFonts]:               https://github.com/google/fonts

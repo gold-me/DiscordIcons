@@ -5,6 +5,7 @@ node_modules/
 # ClearVision build & test files
 public/
 test/
+local/
 
 # Script files
 *.bak

@@ -1,7 +1,7 @@
 name: Release
 on:
   release:
-    types: [created]
+    types: [published]
 jobs:
   project:
     name: Build
@@ -17,12 +17,6 @@ jobs:
         run: npm ci
       - name: Build
         run: npm run release
-      - name: Release .css 
-        uses: ncipollo/release-action@v1
-        with:
-          makeLatest: true
-          generateReleaseNotes: true
-          draft: true
 - name: 'Upload DiscordIcons'
     run: |
         cd ${{github.workspace}}

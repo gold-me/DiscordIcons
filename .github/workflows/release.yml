@@ -18,7 +18,7 @@ jobs:
         run: npm ci
       - name: Build
         run: npm run release
-      - name: Release .css files
+      - name: Release .css
         uses: ncipollo/release-action@v1
         with:
           artifacts: "public/*.css"

@@ -1,5 +1,4 @@
 name: Release
-
 on:
   push:
     tags:
@@ -22,7 +21,7 @@ jobs:
       - name: Release .css files
         uses: ncipollo/release-action@v1
         with:
-          artifacts: "*.theme.css, *.css"
+          artifacts: "public/*.css"
           makeLatest: true
           generateReleaseNotes: true
           draft: true

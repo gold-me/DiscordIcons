@@ -1,8 +1,9 @@
-name: Build Master
+name: Release
+
 on:
   push:
-    branches:
-      - 'master'
+    tags:
+      - "v*"
 jobs:
   project:
     name: Build
@@ -18,8 +19,10 @@ jobs:
         run: npm ci
       - name: Build
         run: npm run build
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v4
+      - name: Release .css files
+        uses: ncipollo/release-action@v1
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./public
+          artifacts: "*.theme.css, *.css"
+          makeLatest: true
+          generateReleaseNotes: true
+          draft: true

@@ -18,10 +18,16 @@ jobs:
         run: npm ci
       - name: Build
         run: npm run release
-      - name: Release .css
+      - name: Release .css 
         uses: ncipollo/release-action@v1
         with:
-          artifacts: "public/*.css"
           makeLatest: true
           generateReleaseNotes: true
           draft: true
+- name: 'Upload DiscordIcons'
+    run: |
+        cd ${{github.workspace}}
+        gh release upload ${{github.event.release.tag_name}} public/DiscordIcons.css        
+    env:
+      GITHUB_TOKEN: ${{ github.TOKEN }}
+    shell: bash

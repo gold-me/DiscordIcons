@@ -11,8 +11,8 @@
     "format": "prettier --write .",
     "test": "npm run clean && npm run test.build",
     "test.build": "sass --style=expanded --no-source-map main.scss:test/main.css",
-    "local": "npm run clean && npm run local.build",
-    "local.build": "sass --style=expanded --no-source-map local-theme.scss:DiscordIcons.theme.css local.scss:local/DiscordIcons.css"
+    "release": "npm run clean && npm run release.build",
+    "release.build": "sass --style=expanded --no-source-map local-theme.scss:public/DiscordIcons.theme.css local.scss:public/DiscordIcons.css"
   },
   "repository": {
     "type": "git",

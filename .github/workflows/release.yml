@@ -1,7 +1,10 @@
 name: Release
 on:
-  release:
-    types: [published]
+  push:
+    tags:
+      - 'v*'
+permissions:
+  contents: write
 jobs:
   project:
     name: Build
@@ -10,17 +13,17 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       - name: Node
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v4.0.4
         with:
           node-version: 20
       - name: Install
         run: npm ci
-      - name: Build
+      - name: Build Release
         run: npm run release
-- name: 'Upload DiscordIcons'
-    run: |
-        cd ${{github.workspace}}
-        gh release upload ${{github.event.release.tag_name}} public/DiscordIcons.css        
-    env:
-      GITHUB_TOKEN: ${{ github.TOKEN }}
-    shell: bash
+      - name: Upload Release
+        uses: ncipollo/release-action@v1
+        with:
+          artifacts: "./public/*.css"
+          makeLatest: true
+          generateReleaseNotes: true
+          draft: true

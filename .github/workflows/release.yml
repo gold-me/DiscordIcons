@@ -18,7 +18,7 @@ jobs:
       - name: Install
         run: npm ci
       - name: Build
-        run: npm run build
+        run: npm run release
       - name: Release .css files
         uses: ncipollo/release-action@v1
         with:

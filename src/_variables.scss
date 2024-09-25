@@ -1,5 +1,3 @@
-$version: '0.3.4';
-
 // ICON MAP
 $miscSettingsIcons: (
     // DEFAULT
@@ -74,6 +72,8 @@ $userSettingsIcons: (
     'VencordCloud': 'https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Cloud.svg',
     // VENCORD SETTINGS SYNC
     'VencordSettingsSync': 'https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Backup.svg',
+    // VESKTOP SETTINGS
+    'Vesktop': 'https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Vencord.svg',
 
     // ACTIVITY PRIVACY
     'activity-privacy': 'https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Privacy.svg',
@@ -113,6 +113,7 @@ $userSettingsIcons: (
     'web-setting-tree-tool': 'https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Memory.svg',
     // LOGOUT
     'logout': 'https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Logout.svg'
+
 );
 
 $serverSettingsIcons: (

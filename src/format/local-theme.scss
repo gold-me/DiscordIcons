@@ -1,11 +1,15 @@
+@use 'src/_version';
+
 /**
  * @name DiscordIcons
  * @author gold_me
  * @description A lightweight theme that adds more icons to your settings.
  * @source https://github.com/gold-me/DiscordIcons
- * @version v0.3.4
+ * @version v#{version.$v}
  */
+
 @import url("https://gold-me.github.io/DiscordIcons/main.css");
+
 :root {
   --si-size: 24px; /* <length> (Default: 24px) Set the size of the icons. */
   --si-height: 32px; /* <length> (Default: 32px) Set the height for sidebar items. If the --si-size is greater than this value, --si-size takes priority. */
@@ -15,7 +19,6 @@
   --si-permacolor: false; /* <true/false> (Default: false) Makes icons always display their custom color. */
   --si-color: currentColor; /* <color> (Default: currentColor) Set's the color for ALL icons. Can be fine tuned with selectors. */
 }
-
 /*
 Custom Colors: Want to make an icon have a custom color? All you have to do is set the --si-color varible for the icon.
 

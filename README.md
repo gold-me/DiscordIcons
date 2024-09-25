@@ -38,13 +38,13 @@ Enable the `ThemeAttributes` plugin in `Settings` > `Vencord` > `Plugins`.
 
 | Variable name     | Description               | Value                | Default value |
 | ----------------- | ------------------------- | ------------------------- | ------------- |
-| `--icon-size`     | Icon size                 | \<[length][css-length]\> | `24px`        |
-| `--icon-height`   | Height of sidebar boxes   | \<[length][css-length]\> | `32px`        |
-| `--icon-animations`   | Toggles sidebar animations | \<true \| false\> | `true`        |
-| `--icon-expand`   | Toggles expand animations | \<true \| false\> | `false`        |
-| `--icon-color`   | Color of icons when hovered/selected | \<[color][css-color]\> | `currentColor`        |
-| `--icon-presets`   | Enables pre-definied custom colors | \<true \| false\> | `true`        |
-| `--icon-permacolor`   | Icons always show their set color | \<true \| false\> | `false`        |
+| `--si-size`     | Icon size                 | \<[length][css-length]\> | `24px`        |
+| `--si-height`   | Height of sidebar boxes   | \<[length][css-length]\> | `32px`        |
+| `--si-animations`   | Toggles sidebar animations | \<true \| false\> | `true`        |
+| `--si-expand`   | Toggles expand animations | \<true \| false\> | `false`        |
+| `--si-color`   | Color of icons when hovered/selected | \<[color][css-color]\> | `currentColor`        |
+| `--si-presets`   | Enables pre-definied custom colors | \<true \| false\> | `true`        |
+| `--si-permacolor`   | Icons always show their set color | \<true \| false\> | `false`        |
 
 
 ## Credits

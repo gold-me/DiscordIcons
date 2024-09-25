@@ -11,7 +11,7 @@
     "test": "npm run clean && npm run test.build",
     "test.build": "sass --style=expanded --no-source-map main.scss:test/main.css",
     "release": "npm run clean && npm run release.build",
-    "release.build": "sass --style=expanded --no-source-map local-theme.scss:public/DiscordIcons.theme.css local.scss:public/DiscordIcons.css"
+    "release.build": "sass --style=expanded --no-source-map --load-path=. src/format/local-theme.scss:public/DiscordIcons.theme.css src/format/local.scss:public/DiscordIcons.css"
   },
   "repository": {
     "type": "git",

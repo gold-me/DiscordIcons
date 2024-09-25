@@ -6,10 +6,10 @@ $presetColors: (
 );
 
 %settingsSidebar {
-    @container root style(--icon-presets: true) {
+    @container root style(--si-presets: true) {
         @each $i, $color in $presetColors {
             %tabBarItem[data-tab-id=#{str-replace("\'"+#{$i}+"\'", '-', ' ')} i] {
-            --icon-color: #{$color};
+            --si-color: #{$color};
             }
         }
     }

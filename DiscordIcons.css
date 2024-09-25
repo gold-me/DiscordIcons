@@ -12,3 +12,20 @@
 NOTE: THIS FILL WILL BE DELETED SOON, PLEASE CHANGE YOUR IMPORT URL!!!
 New import url: "https://gold-me.github.io/DiscordIcons/main.css" or "https://raw.githubusercontent.com/gold-me/DiscordIcons/master/DiscordIcons.theme.css"
 */
+
+.sidebar_c25c6d .side_a0 div[style^="margin-bottom"]:after {
+	display: block;
+	content: 'DiscordIcons Notice: This import url will be deprecated soon!';
+	color: black;
+	background-color: var(--info-warning-foreground);
+	border-radius: 8px;
+	text-rendering: optimizeLegibility;
+	padding: 6px 8px;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 14px;
+	font-family: inherit;
+}
+.sidebar_c25c6d .side_a0 div[style^="margin-bottom"]+.header_a0 {
+	padding: 0px 0px !important;
+}

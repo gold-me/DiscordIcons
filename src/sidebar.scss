@@ -1,24 +1,11 @@
 /* SETTINGS SIDEBAR */
 %settingsSidebar {
     %tabBarItem {
-        padding: calc((var(--icon-height) - var(--icon-size)) / 2) 4px !important;
-	    line-height: var(--icon-size);
-
-        &:hover::before {
-            opacity: 0.7;
-        }
-
-        &%tabBarItemSelected::before {
-            opacity: 1;
-        }
-
-        &:hover::before,
-        &%tabBarItemSelected::before {
-            background-color: var(--icon-color);
-        }
+        padding: calc((var(--si-height) - var(--si-size)) / 2) 4px !important;
+	    line-height: var(--si-size);
 
         // ICON ANIMATIONS
-        @container root style(--icon-animations: true) {
+        @container root style(--si-animations: true) {
             border-radius: 4px 0px 0px 4px;
 		    transform: translateZ(0);
 		    transition: 220ms;
@@ -31,18 +18,18 @@
         }
 
         // ICON PERMACOLOR
-        @container root style(--icon-expand: true) {
+        @container root style(--si-expand: true) {
             &:before {
-                background-color: var(--icon-color);
+                background-color: var(--si-color);
             }
         }
 
         // ICON EXPAND
-        @container root style(--icon-expand: true) {
+        @container root style(--si-expand: true) {
             &:hover,
             &%tabBarItemSelected {
-                min-width: calc(var(--custom-standard-sidebar-view-sidebar-content-width) + (var(--icon-size) * (1 + (1 / 3))));
-                margin-left: calc(-1 * var(--icon-size) * (1 + (1 / 3)));
+                min-width: calc(var(--custom-standard-sidebar-view-sidebar-content-width) + (var(--si-size) * (1 + (1 / 3))));
+                margin-left: calc(-1 * var(--si-size) * (1 + (1 / 3)));
             }
         }
 

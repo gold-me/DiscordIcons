@@ -1,5 +1,8 @@
+@use 'src/_version';
+/* DiscordIcons v#{version.$v} */
+
 // VARIABLES
-@import 'src/variables.scss';
+@import 'src/_variables.scss';
 
 // SELECTORS
 @import 'lib/selectors/selectorPlaceholders.scss';

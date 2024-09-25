@@ -36,21 +36,21 @@
 
   // USER SETTINGS
   @each $i, $u in $userSettingsIcons {
-    %tabBarItem[data-tab-id=#{str-replace("\'"+#{$i}+"\'", '-', ' ')} i]:before {
-      mask: var(--si-#{str-replace(#{$i}, '-&', '')}) center/contain no-repeat;
+    %tabBarItem[data-tab-id=#{str-replace("\'" + $i + "\'", '-', ' ')} i]:before {
+      mask: var(--si-#{str-replace($i, '-&', '')}) center/contain no-repeat;
     }
   }
 
   // SERVER SETTINGS
   @each $i, $u in $serverSettingsIcons {
-    %tabBarItem[data-tab-id=#{str-replace("\'"+#{$i}+"\'", '-', ' ')} i]:before {
+    %tabBarItem[data-tab-id=#{str-replace("\'" + $i + "\'", '-', ' ')} i]:before {
       mask: var(--si-#{str-replace(#{$i}, '-&', '')}) center/contain no-repeat;
     }
   }
 
   // CHANNEL SETTINGS
   @each $i, $u in $channelSettingsIcons {
-    %tabBarItem[data-tab-id=#{str-replace("\'"+#{$i}+"\'", '-', ' ')} i]:before {
+    %tabBarItem[data-tab-id=#{str-replace("\'" + $i + "\'", '-', ' ')} i]:before {
       mask: var(--si-#{str-replace(#{$i}, '-&', '')}) center/contain no-repeat;
     }
   }

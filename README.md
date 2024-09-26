@@ -43,7 +43,6 @@ Enable the `ThemeAttributes` plugin in `Settings` > `Vencord` > `Plugins`.
 | `--si-animations`   | Toggles sidebar animations | \<true \| false\> | `true`        |
 | `--si-expand`   | Toggles expand animations | \<true \| false\> | `false`        |
 | `--si-color`   | Color of icons when hovered/selected | \<[color][css-color]\> | `currentColor`        |
-| `--si-presets`   | Enables pre-definied custom colors | \<true \| false\> | `true`        |
 | `--si-permacolor`   | Icons always show their set color | \<true \| false\> | `false`        |
 
 

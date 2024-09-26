@@ -80,22 +80,34 @@
 :root {
 	@each $i, $u in $miscSettingsIcons {
 		@if str-index($i, '_') {
-				--si-#{str-replace($i, '_', '')}: var(--si-#{str-replace($i, '-&', '')});
+				--si-#{str-replace(str-replace($i, '_', ''), '&', '')}: var(--si-#{str-replace($i, '-&', '')});
+		}
+		@if str-index($i, '-') {
+				--si-#{str-replace(str-replace($i, '-', ''), '&', '')}: var(--si-#{str-replace($i, '-&', '')});
 		}
 	}
 	@each $i, $u in $userSettingsIcons {
 		@if str-index($i, '_') {
-				--si-#{str-replace($i, '_', '')}: var(--si-#{str-replace($i, '-&', '')});
+				--si-#{str-replace(str-replace($i, '_', ''), '&', '')}: var(--si-#{str-replace($i, '-&', '')});
+		}
+		@if str-index($i, '-') {
+			--si-#{str-replace(str-replace($i, '-', ''), '&', '')}: var(--si-#{str-replace($i, '-&', '')});
 		}
 	}
 	@each $i, $u in $serverSettingsIcons {
 		@if str-index($i, '_') {
-				--si-#{str-replace($i, '_', '')}: var(--si-#{str-replace($i, '-&', '')});
+				--si-#{str-replace(str-replace($i, '_', ''), '&', '')}: var(--si-#{str-replace($i, '-&', '')});
+		}
+		@if str-index($i, '-') {
+			--si-#{str-replace(str-replace($i, '-', ''), '&', '')}: var(--si-#{str-replace($i, '-&', '')});
 		}
 	}
 	@each $i, $u in $channelSettingsIcons {
 		@if str-index($i, '_') {
 				--si-#{str-replace($i, '_', '')}: var(--si-#{str-replace($i, '-&', '')});
+		}
+		@if str-index($i, '-') {
+			--si-#{str-replace(str-replace($i, '-', ''), '&', '')}: var(--si-#{str-replace($i, '-&', '')});
 		}
 	}
 }

@@ -125,21 +125,21 @@
     @if in_map($presetColors, $i) {
       --si-color-#{str-replace($i, '-&', '')}: #{map_get($presetColors, $i)};
     } @else {
-      --si-color-#{str-replace($i, '-&', '')}: var(si-color);
+      --si-color-#{str-replace($i, '-&', '')}: var(--si-color);
     }
   }
   @each $i, $u in $serverSettingsIcons {
     @if in_map($presetColors, $i) {
       --si-color-#{str-replace($i, '-&', '')}: #{map_get($presetColors, $i)};
     } @else {
-      --si-color-#{str-replace($i, '-&', '')}: var(si-color);
+      --si-color-#{str-replace($i, '-&', '')}: var(--si-color);
     }
   }
   @each $i, $u in $channelSettingsIcons {
     @if in_map($presetColors, $i) {
       --si-color-#{str-replace($i, '-&', '')}: #{map_get($presetColors, $i)};
     } @else {
-      --si-color-#{str-replace($i, '-&', '')}: var(si-color);
+      --si-color-#{str-replace($i, '-&', '')}: var(--si-color);
     }
   }
 }

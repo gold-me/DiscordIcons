@@ -18,7 +18,7 @@
         }
 
         // ICON PERMACOLOR
-        @container root style(--si-expand: true) {
+        @container root style(--si-permacolor: true) {
             &:before {
                 background-color: var(--si-color);
             }

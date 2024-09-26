@@ -1,5 +1,7 @@
-@use 'src/_version';
-
+@use 'src/version';
+@import 'src/variables.scss';
+@import 'src/functions.scss';
+@import 'src/presets.scss';
 /**
  * @name DiscordIcons
  * @author gold_me
@@ -18,12 +20,40 @@
   --si-presets: true; /* <true/false> (Default: false) Some icons have have been setup to change color on their selection/hover by default, set this to true to disable that functionality. */
   --si-permacolor: false; /* <true/false> (Default: false) Makes icons always display their custom color. */
   --si-color: currentColor; /* <color> (Default: currentColor) Set's the color for ALL icons. Can be fine tuned with selectors. */
-}
-/*
-Custom Colors: Want to make an icon have a custom color? All you have to do is set the --si-color varible for the icon.
+  --si-opacity: 0.4;
+  --si-opacity-hover: 0.8;
 
-Example:
-.item_a0[data-tab-id="Discord Nitro"] {
-  --si-color: var(--brand-500);
+  /* Exhaustive List of Icons: */
+  @each $i, $u in $userSettingsIcons {
+    --si-#{str-replace($i, '-&', '')}: url("#{$u}");
+  }
+  @each $i, $u in $serverSettingsIcons {
+    --si-#{str-replace($i, '-&', '')}: url("#{$u}");
+  }
+  @each $i, $u in $channelSettingsIcons {
+    --si-#{str-replace($i, '-&', '')}: url("#{$u}");
+  }
+
+  /* Exhaustive List of Colors: */
+  @each $i, $u in $userSettingsIcons {
+    @if in_map($presetColors, $i) {
+      --si-color-#{str-replace($i, '-&', '')}: #{map_get($presetColors, $i)};
+    } @else {
+      --si-color-#{str-replace($i, '-&', '')}: var(si-color);
+    }
+  }
+  @each $i, $u in $serverSettingsIcons {
+    @if in_map($presetColors, $i) {
+      --si-color-#{str-replace($i, '-&', '')}: #{map_get($presetColors, $i)};
+    } @else {
+      --si-color-#{str-replace($i, '-&', '')}: var(si-color);
+    }
+  }
+  @each $i, $u in $channelSettingsIcons {
+    @if in_map($presetColors, $i) {
+      --si-color-#{str-replace($i, '-&', '')}: #{map_get($presetColors, $i)};
+    } @else {
+      --si-color-#{str-replace($i, '-&', '')}: var(si-color);
+    }
+  }
 }
-*/

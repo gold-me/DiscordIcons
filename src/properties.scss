@@ -28,11 +28,6 @@
 	inherits: true;
 	initial-value: false;
 }
-@property --si-presets {
-	syntax: "true | false";
-	inherits: true;
-	initial-value: true;
-}
 @property --si-permacolor {
 	syntax: "true | false";
 	inherits: true;
@@ -42,6 +37,16 @@
 	syntax: "<color>";
 	inherits: true;
 	initial-value: currentColor;
+}
+@property --si-opacity {
+	syntax: "<number>";
+	inherits: true;
+	initial-value: 0.4;
+}
+@property --si-opacity-hover {
+	syntax: "<number>";
+	inherits: true;
+	initial-value: 0.8;
 }
 
 @each $i, $u in $miscSettingsIcons {
@@ -78,9 +83,10 @@
 
 // SettingsIcons Parity Fix
 :root {
+	/* SettingsIcons Parity */
 	@each $i, $u in $miscSettingsIcons {
 		@if str-index($i, '_') {
-				--si-#{str-replace(str-replace($i, '_', ''), '&', '')}: var(--si-#{str-replace($i, '-&', '')});
+				--si-#{str-replace($i, '_', '')}: var(--si-#{str-replace($i, '-&', '')});
 		}
 		@if str-index($i, '-') {
 				--si-#{str-replace(str-replace($i, '-', ''), '&', '')}: var(--si-#{str-replace($i, '-&', '')});
@@ -88,7 +94,7 @@
 	}
 	@each $i, $u in $userSettingsIcons {
 		@if str-index($i, '_') {
-				--si-#{str-replace(str-replace($i, '_', ''), '&', '')}: var(--si-#{str-replace($i, '-&', '')});
+				--si-#{str-replace($i, '_', '')}: var(--si-#{str-replace($i, '-&', '')});
 		}
 		@if str-index($i, '-') {
 			--si-#{str-replace(str-replace($i, '-', ''), '&', '')}: var(--si-#{str-replace($i, '-&', '')});
@@ -96,7 +102,7 @@
 	}
 	@each $i, $u in $serverSettingsIcons {
 		@if str-index($i, '_') {
-				--si-#{str-replace(str-replace($i, '_', ''), '&', '')}: var(--si-#{str-replace($i, '-&', '')});
+				--si-#{str-replace($i, '_', '')}: var(--si-#{str-replace($i, '-&', '')});
 		}
 		@if str-index($i, '-') {
 			--si-#{str-replace(str-replace($i, '-', ''), '&', '')}: var(--si-#{str-replace($i, '-&', '')});
@@ -110,4 +116,30 @@
 			--si-#{str-replace(str-replace($i, '-', ''), '&', '')}: var(--si-#{str-replace($i, '-&', '')});
 		}
 	}
+}
+
+// COLORS
+:root {
+  /* Exhaustive List of Colors: */
+  @each $i, $u in $userSettingsIcons {
+    @if in_map($presetColors, $i) {
+      --si-color-#{str-replace($i, '-&', '')}: #{map_get($presetColors, $i)};
+    } @else {
+      --si-color-#{str-replace($i, '-&', '')}: var(si-color);
+    }
+  }
+  @each $i, $u in $serverSettingsIcons {
+    @if in_map($presetColors, $i) {
+      --si-color-#{str-replace($i, '-&', '')}: #{map_get($presetColors, $i)};
+    } @else {
+      --si-color-#{str-replace($i, '-&', '')}: var(si-color);
+    }
+  }
+  @each $i, $u in $channelSettingsIcons {
+    @if in_map($presetColors, $i) {
+      --si-color-#{str-replace($i, '-&', '')}: #{map_get($presetColors, $i)};
+    } @else {
+      --si-color-#{str-replace($i, '-&', '')}: var(si-color);
+    }
+  }
 }

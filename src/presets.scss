@@ -4,13 +4,3 @@ $presetColors: (
     'nitro-server-boost': 'var(--guild-boosting-pink)',
     'guild_premium': 'var(--guild-boosting-pink)'
 );
-
-%settingsSidebar {
-    @container root style(--si-presets: true) {
-        @each $i, $color in $presetColors {
-            %tabBarItem[data-tab-id=#{str-replace("\'"+#{$i}+"\'", '-', ' ')} i] {
-            --si-color: #{$color};
-            }
-        }
-    }
-}

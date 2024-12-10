@@ -230,6 +230,10 @@ Below are exhaustive lists of all existing variables for all icons and their res
 [twemoji]: https://github.com/twitter/twemoji
 [twemoji-author]: https://github.com/twitter
 
+[DiscordSelectors]:    https://github.com/Zerthox/DiscordSelectors/tree/master
+[DiscordSelectors-author]:    https://github.com/Zerthox
+
 - [Google Fonts][GoogleFonts] by [Google][GoogleFonts-author] - Apache License, Version 2.0
-- [Ionicons][ionicons] by [Ionic][ionicons-author] - MIT license
-- [Twemoji][twemoji] by [Twitter][twemoji-author] - MIT license
+- [Ionicons][ionicons] by [Ionic][ionicons-author] - MIT License
+- [Twemoji][twemoji] by [Twitter][twemoji-author] - MIT License
+- [DiscordSelectors][DiscordSelectors] by [Zerthox][DiscordSelectors-author] - MIT Licence

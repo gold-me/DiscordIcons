@@ -22,7 +22,7 @@
 .app_bd26cc {
   @extend %app !optional;
 }
-.app_a01fb1 {
+.app_b3f0261fb1 {
   @extend %shakeable !optional;
 }
 .bg_d4b6c5 {
@@ -151,56 +151,56 @@
 .progressBarContainer_c75f85 {
   @extend %serverBoostProgressBar !optional;
 }
-.containerDefault_a08117 {
+.containerDefault_b3f0268117 {
   @extend %categoryContainerDefault !optional;
 }
 .containerUserOver__91b97 {
   @extend %categoryContainerUserOver !optional;
 }
-.containerDragBefore_a08117 {
+.containerDragBefore_b3f0268117 {
   @extend %categoryContainerDragBefore !optional;
 }
-.containerDragAfter_a08117 {
+.containerDragAfter_b3f0268117 {
   @extend %categoryContainerDragAfter !optional;
 }
-.containerDragAfter_a08117,
-.containerDragBefore_a08117 {
+.containerDragAfter_b3f0268117,
+.containerDragBefore_b3f0268117 {
   @extend %categoryContainerDrag !optional;
 }
-.containerDefault_a08117,
-.containerDragAfter_a08117,
-.containerDragBefore_a08117,
+.containerDefault_b3f0268117,
+.containerDragAfter_b3f0268117,
+.containerDragBefore_b3f0268117,
 .containerUserOver__91b97 {
   @extend %categoryContainer !optional;
 }
-.wrapper_a08117 {
+.wrapper_b3f0268117 {
   @extend %categoryWrapper !optional;
 }
-.clickable_a08117 {
+.clickable_b3f0268117 {
   @extend %categoryWrapperClickable !optional;
 }
-.collapsed_a08117 {
+.collapsed_b3f0268117 {
   @extend %categoryWrapperCollapsed !optional;
 }
-.muted_a08117 {
+.muted_b3f0268117 {
   @extend %categoryWrapperMuted !optional;
 }
-.mainContent_a08117 {
+.mainContent_b3f0268117 {
   @extend %categoryMain !optional;
 }
-.icon_a08117 {
+.icon_b3f0268117 {
   @extend %categoryIcon !optional;
 }
-.name_a08117 {
+.name_b3f0268117 {
   @extend %categoryName !optional;
 }
 .overflow_a82120 {
   @extend %categoryText !optional;
 }
-.children_a08117 {
+.children_b3f0268117 {
   @extend %categoryButtons !optional;
 }
-.addButtonIcon_a08117 {
+.addButtonIcon_b3f0268117 {
   @extend %categoryAddIcon !optional;
 }
 .button_ccfa44 {
@@ -318,7 +318,7 @@
 .usernameSpeaking_d80634 {
   @extend %voiceUserNameSpeaking !optional;
 }
-.voiceChannelsButton_a08117 {
+.voiceChannelsButton_b3f0268117 {
   @extend %voiceChannelsButton !optional;
 }
 .container_d03bba {
@@ -523,7 +523,7 @@
 .actions_bf1a22 {
   @extend %activityPanelActions !optional;
 }
-.liveBadge_bf1a22 {
+.liveBadge_aa73eb {
   @extend %panelLiveBadge !optional;
 }
 .noiseCancellationPopout_adcaac {
@@ -568,7 +568,7 @@
 .activityText_c91bad {
   @extend %privateChannelActivityText !optional;
 }
-.icon_ad923e {
+.icon_ea6c42 {
   @extend %privateChannelActivityIcon !optional;
 }
 .closeButton_c91bad {
@@ -817,13 +817,13 @@
 .form_a7d72e {
   @extend %chatForm !optional;
 }
-.channelTextArea_d0696b {
+.channelTextArea_bdf0de {
   @extend %channelTextArea !optional;
 }
-.scrollableContainer_d0696b {
+.scrollableContainer_bdf0de {
   @extend %channelTextAreaScrollable !optional;
 }
-.inner_d0696b {
+.inner_bdf0de {
   @extend %channelTextAreaInner !optional;
 }
 .attachWrapper_f298d4 {
@@ -838,13 +838,13 @@
 .attachButtonPlus_f298d4 {
   @extend %channelTextAreaAttachButtonPlus !optional;
 }
-.textArea_d0696b {
+.textArea_bdf0de {
   @extend %textArea !optional;
 }
 .placeholder_a552a6 {
   @extend %textAreaPlaceholder !optional;
 }
-.textAreaSlate_d0696b {
+.textAreaSlate_bdf0de {
   @extend %slateTextArea !optional;
 }
 .button_f9af59 {
@@ -859,10 +859,10 @@
 .text_d7ebeb {
   @extend %channelTextAreaTypingText !optional;
 }
-.attachedBars_d0696b {
+.stackedBars_bdf0de {
   @extend %channelTextAreAttachedBar !optional;
 }
-.stackedAttachedBar_d0696b {
+.newMemberActionBar_bdf0de {
   @extend %channelTextAreaStackedAttachedBar !optional;
 }
 .upload_df1eaf {
@@ -1198,28 +1198,28 @@
 .input_cebd1c {
   @extend %switchCheckbox !optional;
 }
-.top_a0 {
+.top_b3f026 {
   @extend %tabBarTop !optional;
 }
-.side_a0 {
+.side_b3f026 {
   @extend %tabBarSide !optional;
 }
-.brand_a0 {
+.brand_b3f026 {
   @extend %tabBarBrand !optional;
 }
-.topPill_a0 {
+.topPill_b3f026 {
   @extend %tabBarTopPill !optional;
 }
-.themed_a0 {
+.themed_b3f026 {
   @extend %tabBarThemed !optional;
 }
-.item_a0 {
+.item_b3f026 {
   @extend %tabBarItem !optional;
 }
-.selected_a0 {
+.selected_b3f026 {
   @extend %tabBarItemSelected !optional;
 }
-.disabled_a0 {
+.disabled_b3f026 {
   @extend %tabBarItemDisabled !optional;
 }
 .premiumLabel_ae3c77 {
@@ -1303,7 +1303,7 @@
 .scroller_fea3ef {
   @extend %guilds !optional;
 }
-.footer_aa1bff {
+.footer_d71945 {
   @extend %guildsFooter !optional;
 }
 .listItem_c96c45 {
@@ -1534,7 +1534,7 @@
 .textContainer_d8f41e {
   @extend %nitroGiftTextContainer !optional;
 }
-.innerWrapper_c511e4 {
+.innerWrapperV1_c511e4 {
   @extend %nitroFooterInnerWrapper !optional;
 }
 .allPerksScroller_ed2e7b {
@@ -1754,7 +1754,7 @@
 .activityText_a31c43 {
   @extend %memberActivityText !optional;
 }
-.icon_ad923e {
+.icon_ea6c42 {
   @extend %memberActivityIcon !optional;
 }
 .memberGroupsPlaceholder_cbd271 {
@@ -1859,50 +1859,50 @@
 .textLink_f61cb8 {
   @extend %activityInviteTextLink !optional;
 }
-.attachment_b52bef {
+.fileWrapper_f46c86 {
   @extend %attachment !optional;
 }
 .embedWrapper_b558d0 {
   @extend %attachmentEmbedWrapper !optional;
 }
-.icon_b52bef {
+.icon_f46c86 {
   @extend %attachmentIcon !optional;
 }
-.attachmentInner_b52bef {
+.fileInner_f46c86 {
   @extend %attachmentInner !optional;
 }
-.filenameLinkWrapper_b52bef {
+.filenameLinkWrapper_f46c86 {
   @extend %fileNameLinkWrapper !optional;
 }
-.fileNameLink_b52bef {
+.fileNameLink_f46c86 {
   @extend %fileNameLink !optional;
 }
-.metadata_b52bef {
+.metadata_f46c86 {
   @extend %fileMetadata !optional;
 }
 .downloadButton__3fb6d {
   @extend %attachmentDownloadButton !optional;
 }
-.filenameWrapper_b52bef {
+.filenameWrapper_f46c86 {
   @extend %fileNameWrapper !optional;
 }
-.filename_b52bef {
+.filename_f46c86 {
   @extend %fileName !optional;
 }
-.size_b52bef {
+.size_f46c86 {
   @extend %fileSize !optional;
 }
-.progress_b52bef {
+.progress_f46c86 {
   @extend %fileProgress !optional;
 }
 .progressBar_c6473a {
   @extend %fileProgressBar !optional;
 }
-.cancelButton_b52bef {
+.cancelButton_f46c86 {
   @extend %attachmentCancelButton !optional;
 }
 .downloadButton__3fb6d,
-.cancelButton_b52bef {
+.cancelButton_f46c86 {
   @extend %attachmentButton !optional;
 }
 .inline {
@@ -2535,10 +2535,10 @@ pre {
 .userProfileOuterThemed_c69a7b {
   @extend %userProfileOuterThemed !optional;
 }
-.statusBubbleOuter_d0a252 {
+.statusBubbleOuter_af9888 {
   @extend %userProfileStatusBubbleOuter !optional;
 }
-.statusBubble_d0a252 {
+.statusBubble_af9888 {
   @extend %userProfileStatusBubble !optional;
 }
 .userPanelInnerThemed_c69a7b {
@@ -2584,10 +2584,10 @@ pre {
 .profileCustomizationPreview_ab876d {
   @extend %userPopoutCustomizationPreview !optional;
 }
-.activity_cd74cc {
+.activity_f00225 {
   @extend %userPopoutActivity !optional;
 }
-.buttonColor_cd74cc {
+.buttonColor_f00225 {
   @extend %userPopoutActivityButton !optional;
 }
 .roles_fa2f72 {
@@ -2626,7 +2626,7 @@ pre {
 .tabBarContainer_b9fccc {
   @extend %userModalTabBarContainer !optional;
 }
-.tabBar_c1519f {
+.tabBar_ecc04c {
   @extend %userModalTabBarContainerNew !optional;
 }
 .userInfoSection_a24910 {
@@ -2635,40 +2635,40 @@ pre {
 .userInfoSectionHeader_a24910 {
   @extend %userModalInfoSectionHeader !optional;
 }
-.connectedAccounts_f3eb60 {
+.connectedAccounts_ab12c6 {
   @extend %userModalConnectedAccounts !optional;
 }
-.connectedAccountContainer_f3eb60 {
+.connectedAccountContainer_ab12c6 {
   @extend %userModalConnectedAccountContainer !optional;
 }
-.connectedAccountIcon_f3eb60 {
+.connectedAccountIcon_ab12c6 {
   @extend %userModalConnectedAccountIcon !optional;
 }
-.connectedAccountName_f3eb60 {
+.connectedAccountName_ab12c6 {
   @extend %userModalConnectedAccountName !optional;
 }
-.connectedAccountVerifiedIcon_f3eb60 {
+.connectedAccountVerifiedIcon_ab12c6 {
   @extend %userModalConnectedAccountVerifiedIcon !optional;
 }
-.connectedAccountOpenIcon_f3eb60 {
+.connectedAccountOpenIcon_ab12c6 {
   @extend %userModalConnectedAccountOpenIcon !optional;
 }
-.listScroller_e4be58 {
+.listScroller_d2d6cb {
   @extend %userModalListScroller !optional;
 }
-.listRow_e4be58 {
+.listRow_d2d6cb {
   @extend %userModalListRow !optional;
 }
-.listRowContent_e4be58 {
+.listRowContent_d2d6cb {
   @extend %userModalListRowConent !optional;
 }
-.listName_e4be58 {
+.listName_d2d6cb {
   @extend %userModalListName !optional;
 }
-.guildNick_b26403 {
+.guildNick_c5a773 {
   @extend %userModalListGuildNick !optional;
 }
-.note_c2dcc6 {
+.note_d53fbd {
   @extend %userModalNote !optional;
 }
 .pageWrapper_a3a4ce {
@@ -2767,7 +2767,7 @@ pre {
 .contentContainer_a56260 {
   @extend %discoverQuestContent !optional;
 }
-.selected_bc4ee1 {
+.selected_a853ca {
   @extend %discoverQuestTabSelected !optional;
 }
 .container_a97111 {
@@ -3262,7 +3262,7 @@ pre {
 .sidebarRegionScroller_c25c6d {
   @extend %settingsSidebarScroller !optional;
 }
-.sidebar_c25c6d {
+.sidebar__23e6b {
   @extend %settingsSidebar !optional;
 }
 .selectedBackground_ae3c77 {
@@ -3271,13 +3271,13 @@ pre {
 .serverBoostTabItem_f7189e {
   @extend %settingsSidebarServerBoost !optional;
 }
-.header_a0 {
+.header_b3f026 {
   @extend %settingsHeader !optional;
 }
-.headerText_a0 {
+.headerText_b3f026 {
   @extend %settingsHeaderText !optional;
 }
-.separator_a0 {
+.separator_b3f026 {
   @extend %settingsSeparator !optional;
 }
 .socialLinks_c44e94 {
@@ -3760,7 +3760,7 @@ pre {
 .container_ac201b {
   @extend %roleAssignPopout !optional;
 }
-.loading_cea94f {
+.loading_f3e233 {
   @extend %loading !optional;
 }
 .container_b11c5e {
@@ -3908,7 +3908,7 @@ pre {
 .detailsBlock_a206c7 {
   @extend %userSettingsSubsPayDetailsBlock !optional;
 }
-.premiumSubscriptionAccountCredit_ca73a1 {
+.premiumSubscriptionAccountCredit_b7f69f {
   @extend %userSettingsSubsAccountCredit !optional;
 }
 .defaultIndicator_ede133 {
@@ -4110,7 +4110,7 @@ pre {
 .rowContainer_f3a5b1 {
   @extend %stageSpeakers !optional;
 }
-.participants_a07d72 {
+.participants_b3f0267d72 {
   @extend %stageParticipants !optional;
 }
 .primaryButtonColor_e12b21 {
@@ -4620,22 +4620,22 @@ pre {
 .uploadIcon_a15d29 {
   @extend %forumUploadIcon !optional;
 }
-.icon_a03b48 {
+.icon_b3f0263b48 {
   @extend %forumFirstIcon !optional;
 }
 .increasedActivityMainCard_e53744 {
   @extend %forumIncreasedCard !optional;
 }
-.container_a039eb {
+.container_b3f02639eb {
   @extend %forumSetupContainer !optional;
 }
-.stepContainer_a039eb {
+.stepContainer_b3f02639eb {
   @extend %forumSetupStepContainer !optional;
 }
-.stepStatus_a039eb {
+.stepStatus_b3f02639eb {
   @extend %forumSetupStepStatus !optional;
 }
-.rolesList_a039eb {
+.rolesList_b3f02639eb {
   @extend %forumSetupRoleList !optional;
 }
 .title_a57509 {
@@ -4653,10 +4653,10 @@ pre {
 .replies__1b03e {
   @extend %forumIncreasedReplyPreview !optional;
 }
-.container_a03b48 {
+.container_b3f0263b48 {
   @extend %forumEmpty !optional;
 }
-.cta_a03b48 {
+.cta_b3f0263b48 {
   @extend %forumEmptyCTA !optional;
 }
 .container_d66623 {
@@ -4893,7 +4893,7 @@ pre {
 .benefitsContainer_a11d84 {
   @extend %directoryAppPremiumContainer !optional;
 }
-.list_a06168 {
+.list_b3f0266168 {
   @extend %directoryAppPermissionList !optional;
 }
 .intentsContainer_f6d180 {

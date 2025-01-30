@@ -1,10 +1,9 @@
-/* SETTINGS SIDEBAR COLOR PRESETS */
 /**
  * @name DiscordIcons
  * @author gold_me
  * @description A lightweight theme that adds more icons to your settings.
  * @source https://github.com/gold-me/DiscordIcons
- * @version v0.3.6
+ * @version v0.3.10
  */
 @import url("https://gold-me.github.io/DiscordIcons/main.css");
 :root {
@@ -15,16 +14,18 @@
   --si-presets: true; /* <true/false> (Default: false) Some icons have have been setup to change color on their selection/hover by default, set this to true to disable that functionality. */
   --si-permacolor: false; /* <true/false> (Default: false) Makes icons always display their custom color. */
   --si-color: currentColor; /* <color> (Default: currentColor) Set's the color for ALL icons. Can be fine tuned with selectors. */
+  --si-opacity: 0.4;
+  --si-opacity-hover: 0.8;
   /* Exhaustive List of Icons: */
   --si-my-account: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Manage_Accounts.svg");
   --si-profile-customization: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Style.svg");
-  --si-privacy-safety: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Security.svg");
+  --si-content-social: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Groups.svg");
+  --si-data-privacy: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Security.svg");
   --si-family-center: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Supervisor_Account.svg");
   --si-authorized-apps: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/App_Registration.svg");
   --si-sessions: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Devices.svg");
   --si-connections: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Link.svg");
   --si-settings-clips: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Theaters.svg");
-  --si-friend-requests: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Group_Add.svg");
   --si-discord-nitro: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Discord/Nitro.svg");
   --si-nitro-server-boost: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Discord/Server_Boost.svg");
   --si-subscriptions: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Fact_Check.svg");
@@ -60,6 +61,8 @@
   --si-hotspot-options: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Memory.svg");
   --si-dismissible-content-options: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Memory.svg");
   --si-payment-flow-modals: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Memory.svg");
+  --si-payment-components: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Memory.svg");
+  --si-revenue-storybook: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Memory.svg");
   --si-design-system: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Memory.svg");
   --si-text-playground: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Memory.svg");
   --si-text-component: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Memory.svg");
@@ -83,7 +86,7 @@
   --si-audit_log: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Audit_Log.svg");
   --si-bans: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Gavel.svg");
   --si-community: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Info.svg");
-  --si-onboarding: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Groups.svg");
+  --si-onboarding: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Group_Add.svg");
   --si-analytics: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Insights.svg");
   --si-partner: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Discord/Partner.svg");
   --si-discovery: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Explore.svg");
@@ -95,82 +98,84 @@
   --si-delete: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Delete.svg");
   --si-permissions: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Permissions.svg");
   /* Exhaustive List of Colors: */
-  --si-color-my-account: var(si-color);
-  --si-color-profile-customization: var(si-color);
-  --si-color-privacy-safety: var(si-color);
-  --si-color-family-center: var(si-color);
-  --si-color-authorized-apps: var(si-color);
-  --si-color-sessions: var(si-color);
-  --si-color-connections: var(si-color);
-  --si-color-settings-clips: var(si-color);
-  --si-color-friend-requests: var(si-color);
+  --si-color-my-account: var(--si-color);
+  --si-color-profile-customization: var(--si-color);
+  --si-color-content-social: var(--si-color);
+  --si-color-data-privacy: var(--si-color);
+  --si-color-family-center: var(--si-color);
+  --si-color-authorized-apps: var(--si-color);
+  --si-color-sessions: var(--si-color);
+  --si-color-connections: var(--si-color);
+  --si-color-settings-clips: var(--si-color);
   --si-color-discord-nitro: var(--brand-500);
   --si-color-nitro-server-boost: var(--guild-boosting-pink);
-  --si-color-subscriptions: var(si-color);
-  --si-color-library-inventory: var(si-color);
-  --si-color-billing: var(si-color);
-  --si-color-appearance: var(si-color);
-  --si-color-accessibility: var(si-color);
-  --si-color-voice-video: var(si-color);
-  --si-color-powermode-settings: var(si-color);
-  --si-color-text-images: var(si-color);
-  --si-color-notifications: var(si-color);
-  --si-color-keybinds: var(si-color);
-  --si-color-language: var(si-color);
-  --si-color-windows: var(si-color);
-  --si-color-linux: var(si-color);
-  --si-color-streamer-mode: var(si-color);
-  --si-color-advanced: var(si-color);
-  --si-color-vencordsettings: var(si-color);
-  --si-color-vencordplugins: var(si-color);
-  --si-color-vencordthemes: var(si-color);
-  --si-color-vencordupdater: var(si-color);
-  --si-color-vencordcloud: var(si-color);
-  --si-color-vencordsettingssync: var(si-color);
-  --si-color-vesktop: var(si-color);
-  --si-color-activity-privacy: var(si-color);
-  --si-color-game-activity: var(si-color);
-  --si-color-overlay: var(si-color);
-  --si-color-changelog: var(si-color);
-  --si-color-merchandise: var(si-color);
-  --si-color-hypesquad-online: var(si-color);
-  --si-color-experiments: var(si-color);
-  --si-color-developer-options: var(si-color);
-  --si-color-hotspot-options: var(si-color);
-  --si-color-dismissible-content-options: var(si-color);
-  --si-color-payment-flow-modals: var(si-color);
-  --si-color-design-system: var(si-color);
-  --si-color-text-playground: var(si-color);
-  --si-color-text-component: var(si-color);
-  --si-color-intl-testing: var(si-color);
-  --si-color-profile-effects-preview-tool: var(si-color);
-  --si-color-web-setting-tree-tool: var(si-color);
-  --si-color-logout: var(si-color);
-  --si-color-overview: var(si-color);
-  --si-color-roles: var(si-color);
-  --si-color-emoji: var(si-color);
-  --si-color-stickers: var(si-color);
-  --si-color-soundboard: var(si-color);
-  --si-color-widget: var(si-color);
-  --si-color-guild_templates: var(si-color);
-  --si-color-vanity_url: var(si-color);
-  --si-color-integrations: var(si-color);
-  --si-color-app_directory: var(si-color);
-  --si-color-moderation: var(si-color);
-  --si-color-safety: var(si-color);
-  --si-color-guild_automod: var(si-color);
-  --si-color-audit_log: var(si-color);
-  --si-color-bans: var(si-color);
-  --si-color-community: var(si-color);
-  --si-color-onboarding: var(si-color);
-  --si-color-analytics: var(si-color);
-  --si-color-partner: var(si-color);
-  --si-color-discovery: var(si-color);
-  --si-color-community_welcome: var(si-color);
+  --si-color-subscriptions: var(--si-color);
+  --si-color-library-inventory: var(--si-color);
+  --si-color-billing: var(--si-color);
+  --si-color-appearance: var(--si-color);
+  --si-color-accessibility: var(--si-color);
+  --si-color-voice-video: var(--si-color);
+  --si-color-powermode-settings: var(--si-color);
+  --si-color-text-images: var(--si-color);
+  --si-color-notifications: var(--si-color);
+  --si-color-keybinds: var(--si-color);
+  --si-color-language: var(--si-color);
+  --si-color-windows: var(--si-color);
+  --si-color-linux: var(--si-color);
+  --si-color-streamer-mode: var(--si-color);
+  --si-color-advanced: var(--si-color);
+  --si-color-vencordsettings: var(--si-color);
+  --si-color-vencordplugins: var(--si-color);
+  --si-color-vencordthemes: var(--si-color);
+  --si-color-vencordupdater: var(--si-color);
+  --si-color-vencordcloud: var(--si-color);
+  --si-color-vencordsettingssync: var(--si-color);
+  --si-color-vesktop: var(--si-color);
+  --si-color-activity-privacy: var(--si-color);
+  --si-color-game-activity: var(--si-color);
+  --si-color-overlay: var(--si-color);
+  --si-color-changelog: var(--si-color);
+  --si-color-merchandise: var(--si-color);
+  --si-color-hypesquad-online: var(--si-color);
+  --si-color-experiments: var(--si-color);
+  --si-color-developer-options: var(--si-color);
+  --si-color-hotspot-options: var(--si-color);
+  --si-color-dismissible-content-options: var(--si-color);
+  --si-color-payment-flow-modals: var(--si-color);
+  --si-color-payment-components: var(--si-color);
+  --si-color-revenue-storybook: var(--si-color);
+  --si-color-design-system: var(--si-color);
+  --si-color-text-playground: var(--si-color);
+  --si-color-text-component: var(--si-color);
+  --si-color-intl-testing: var(--si-color);
+  --si-color-profile-effects-preview-tool: var(--si-color);
+  --si-color-web-setting-tree-tool: var(--si-color);
+  --si-color-logout: var(--si-color);
+  --si-color-overview: var(--si-color);
+  --si-color-roles: var(--si-color);
+  --si-color-emoji: var(--si-color);
+  --si-color-stickers: var(--si-color);
+  --si-color-soundboard: var(--si-color);
+  --si-color-widget: var(--si-color);
+  --si-color-guild_templates: var(--si-color);
+  --si-color-vanity_url: var(--si-color);
+  --si-color-integrations: var(--si-color);
+  --si-color-app_directory: var(--si-color);
+  --si-color-moderation: var(--si-color);
+  --si-color-safety: var(--si-color);
+  --si-color-guild_automod: var(--si-color);
+  --si-color-audit_log: var(--si-color);
+  --si-color-bans: var(--si-color);
+  --si-color-community: var(--si-color);
+  --si-color-onboarding: var(--si-color);
+  --si-color-analytics: var(--si-color);
+  --si-color-partner: var(--si-color);
+  --si-color-discovery: var(--si-color);
+  --si-color-community_welcome: var(--si-color);
   --si-color-guild_premium: var(--guild-boosting-pink);
-  --si-color-role_subscriptions: var(si-color);
-  --si-color-members: var(si-color);
-  --si-color-instant_invites: var(si-color);
-  --si-color-delete: var(si-color);
-  --si-color-permissions: var(si-color);
+  --si-color-role_subscriptions: var(--si-color);
+  --si-color-members: var(--si-color);
+  --si-color-instant_invites: var(--si-color);
+  --si-color-delete: var(--si-color);
+  --si-color-permissions: var(--si-color);
 }

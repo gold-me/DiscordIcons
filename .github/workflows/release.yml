@@ -26,4 +26,3 @@ jobs:
           artifacts: "./public/*.css"
           makeLatest: true
           generateReleaseNotes: true
-          draft: true

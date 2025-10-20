@@ -58,7 +58,7 @@
 }
 
 @each $i, $u in $userSettingsIcons {
-  @property --si-#{str-replace($i, '-&', '')} {
+  @property --si-#{str-replace(str-replace($i, '-&', ''), '/', '-')} {
     syntax: "<url>";
     inherits: true;
     initial-value: url(#{$u});
@@ -86,7 +86,7 @@
 	/* SettingsIcons Parity */
 	@each $i, $u in $miscSettingsIcons {
 		@if str-index($i, '_') {
-				--si-#{str-replace($i, '_', '')}: var(--si-#{str-replace($i, '-&', '')});
+				--si-#{str-replace(str-replace($i, '_', ''), '/', '-')}: var(str-replace(str-replace($i, '-&', ''), '/', '-'));
 		}
 		@if str-index($i, '-') {
 				--si-#{str-replace(str-replace($i, '-', ''), '&', '')}: var(--si-#{str-replace($i, '-&', '')});
@@ -123,9 +123,9 @@
   /* Exhaustive List of Colors: */
   @each $i, $u in $userSettingsIcons {
     @if in_map($presetColors, $i) {
-      --si-color-#{str-replace($i, '-&', '')}: #{map_get($presetColors, $i)};
+      --si-color-#{str-replace(str-replace($i, '-&', ''), '/', '-')}: #{map_get($presetColors, $i)};
     } @else {
-      --si-color-#{str-replace($i, '-&', '')}: var(--si-color);
+      --si-color-#{str-replace(str-replace($i, '-&', ''), '/', '-')}: var(--si-color);
     }
   }
   @each $i, $u in $serverSettingsIcons {

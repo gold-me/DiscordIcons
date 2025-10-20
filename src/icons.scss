@@ -38,9 +38,9 @@
   // USER SETTINGS
   @each $i, $u in $userSettingsIcons {
     %tabBarItem[data-tab-id=#{str-replace("\'" + $i + "\'", '-', ' ')} i] {
-      --si-color: var(--si-color-#{str-replace($i, '-&', '')});
+      --si-color: var(--si-color-#{str-replace(str-replace($i, '-&', ''), '/', '-')});
       &:before {
-        mask: var(--si-#{str-replace($i, '-&', '')}) center/contain no-repeat;
+        mask: var(--si-#{str-replace(str-replace($i, '-&', ''), '/', '-')}) center/contain no-repeat;
       }
     }
   }

@@ -43,12 +43,12 @@
   --si-linux: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Logo-Tux.svg");
   --si-streamer-mode: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Videocam.svg");
   --si-advanced: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Tune.svg");
-  --si-vencordsettings: url("https://raw.githubusercontent.com/jdecked/twemoji/main/assets/svg/1f431.svg");
+  --si-settings-tabs: url("https://raw.githubusercontent.com/jdecked/twemoji/main/assets/svg/1f431.svg");
   --si-vencordplugins: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Extention.svg");
   --si-vencordthemes: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Format_Paint.svg");
   --si-vencordupdater: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/System_Update_Alt.svg");
   --si-vencordcloud: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Cloud.svg");
-  --si-vencordsettingssync: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Backup.svg");
+  --si-settings-tabsSync: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Backup.svg");
   --si-vesktop: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Vencord.svg");
   --si-activity-privacy: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Privacy.svg");
   --si-game-activity: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Gamepad.svg");
@@ -71,12 +71,15 @@
   --si-nameplates-preview-tool: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Memory.svg");
   --si-web-setting-tree-tool: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Memory.svg");
   --si-logout: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Logout.svg");
-  --si-overview: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Info.svg");
-  --si-roles: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Badge.svg");
+  --si-profile: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Info.svg");
+  --si-tag: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Tag.svg");
+  --si-engagement: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Web_Traffic.svg");
+  --si-boost_perks: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Perks.svg");
   --si-emoji: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Emoji.svg");
   --si-stickers: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Stickers.svg");
   --si-soundboard: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Soundboard.svg");
-  --si-widget: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Widgets.svg");
+  --si-roles: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Badge.svg");
+  --si-access: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/VPN_Lock.svg");
   --si-guild_templates: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Library_Books.svg");
   --si-vanity_url: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Share.svg");
   --si-integrations: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Mediation.svg");
@@ -95,7 +98,7 @@
   --si-guild_premium: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Discord/Server_Boost.svg");
   --si-role_subscriptions: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Fact_Check.svg");
   --si-members: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Group.svg");
-  --si-instant_invites: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Send.svg");
+  --si-invites: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Send.svg");
   --si-delete: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Delete.svg");
   --si-permissions: url("https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Permissions.svg");
   /* Exhaustive List of Colors: */
@@ -125,12 +128,12 @@
   --si-color-linux: var(--si-color);
   --si-color-streamer-mode: var(--si-color);
   --si-color-advanced: var(--si-color);
-  --si-color-vencordsettings: var(--si-color);
+  --si-color-settings-tabs: var(--si-color);
   --si-color-vencordplugins: var(--si-color);
   --si-color-vencordthemes: var(--si-color);
   --si-color-vencordupdater: var(--si-color);
   --si-color-vencordcloud: var(--si-color);
-  --si-color-vencordsettingssync: var(--si-color);
+  --si-color-settings-tabsSync: var(--si-color);
   --si-color-vesktop: var(--si-color);
   --si-color-activity-privacy: var(--si-color);
   --si-color-game-activity: var(--si-color);
@@ -153,12 +156,15 @@
   --si-color-nameplates-preview-tool: var(--si-color);
   --si-color-web-setting-tree-tool: var(--si-color);
   --si-color-logout: var(--si-color);
-  --si-color-overview: var(--si-color);
-  --si-color-roles: var(--si-color);
+  --si-color-profile: var(--si-color);
+  --si-color-tag: var(--si-color);
+  --si-color-engagement: var(--si-color);
+  --si-color-boost_perks: var(--si-color);
   --si-color-emoji: var(--si-color);
   --si-color-stickers: var(--si-color);
   --si-color-soundboard: var(--si-color);
-  --si-color-widget: var(--si-color);
+  --si-color-roles: var(--si-color);
+  --si-color-access: var(--si-color);
   --si-color-guild_templates: var(--si-color);
   --si-color-vanity_url: var(--si-color);
   --si-color-integrations: var(--si-color);
@@ -177,7 +183,7 @@
   --si-color-guild_premium: var(--guild-boosting-pink);
   --si-color-role_subscriptions: var(--si-color);
   --si-color-members: var(--si-color);
-  --si-color-instant_invites: var(--si-color);
+  --si-color-invites: var(--si-color);
   --si-color-delete: var(--si-color);
   --si-color-permissions: var(--si-color);
 }

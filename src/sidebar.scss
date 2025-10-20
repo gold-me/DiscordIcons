@@ -8,12 +8,12 @@
         @container root style(--si-animations: true) {
             border-radius: 4px 0px 0px 4px;
 		    transform: translateZ(0);
-		    transition: 220ms;
+		    transition: 220ms !important;
 
             &:hover,
             &%tabBarItemSelected {
                 transform: translateX(8px);
-		        transition: 160ms;
+		        transition: 160ms !important;
             }
         }
 

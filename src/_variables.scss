@@ -61,7 +61,7 @@ $userSettingsIcons: (
     'advanced': 'https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Tune.svg',
 
     // VENCORD SETTINGS
-    'vencordsettings': 'https://raw.githubusercontent.com/jdecked/twemoji/main/assets/svg/1f431.svg',
+    'settings/tabs': 'https://raw.githubusercontent.com/jdecked/twemoji/main/assets/svg/1f431.svg',
     // VENCORD PLUGINS
     'vencordplugins': 'https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Extention.svg',
     // VENCORD THEMES
@@ -71,7 +71,7 @@ $userSettingsIcons: (
     // VENCORD CLOUD
     'vencordcloud': 'https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Cloud.svg',
     // VENCORD SETTINGS SYNC
-    'vencordsettingssync': 'https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Backup.svg',
+    'settings/tabsSync': 'https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Backup.svg',
     // VESKTOP SETTINGS
     'vesktop': 'https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Vencord.svg',
 
@@ -123,18 +123,28 @@ $userSettingsIcons: (
 );
 
 $serverSettingsIcons: (
-    // OVERVIEW
-    'overview': 'https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Info.svg',
-    // ROLES
-    'roles': 'https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Badge.svg',
+    // SERVER PROFILE
+    'profile': 'https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Info.svg',
+    //SERVER TAG
+    'tag': 'https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Tag.svg',
+    // ENGAGEMENT
+    'engagement': 'https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Web_Traffic.svg',
+    // BOOST PERKS
+    'boost_perks': 'https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Perks.svg',
+    
+    
     // EMOJI
     'emoji': 'https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Emoji.svg',
     // STICKERS
     'stickers': 'https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Stickers.svg',
     // SOUNDBOARD
     'soundboard': 'https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Soundboard.svg',
-    // WIDGET
-    'widget': 'https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Widgets.svg',
+
+    // ROLES
+    'roles': 'https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Badge.svg',
+    // ACCESS
+    'access': 'https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/VPN_Lock.svg',
+
     // SERVER TEMPLATE
     'guild_templates': 'https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Library_Books.svg',
     // CUSTOM INVITE LINK
@@ -177,7 +187,7 @@ $serverSettingsIcons: (
     // MEMBERS
     'members': 'https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Group.svg',
     // INVITES
-    'instant_invites': 'https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Send.svg',
+    'invites': 'https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Send.svg',
 
     // DELETE
     'delete': 'https://raw.githubusercontent.com/gold-me/DiscordIcons/master/Icons/SVG/Delete.svg'

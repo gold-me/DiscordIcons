@@ -25,7 +25,7 @@
 
   /* Exhaustive List of Icons: */
   @each $i, $u in $userSettingsIcons {
-    --si-#{str-replace($i, '-&', '')}: url("#{$u}");
+    --si-#{str-replace(str-replace($i, '-&', ''), '/', '-')}: url("#{$u}");
   }
   @each $i, $u in $serverSettingsIcons {
     --si-#{str-replace($i, '-&', '')}: url("#{$u}");
@@ -37,9 +37,9 @@
   /* Exhaustive List of Colors: */
   @each $i, $u in $userSettingsIcons {
     @if in_map($presetColors, $i) {
-      --si-color-#{str-replace($i, '-&', '')}: #{map_get($presetColors, $i)};
+      --si-color-#{str-replace(str-replace($i, '-&', ''), '/', '-')}: #{map_get($presetColors, $i)};
     } @else {
-      --si-color-#{str-replace($i, '-&', '')}: var(--si-color);
+      --si-color-#{str-replace(str-replace($i, '-&', ''), '/', '-')}: var(--si-color);
     }
   }
   @each $i, $u in $serverSettingsIcons {
